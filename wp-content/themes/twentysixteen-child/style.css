@@ -1,0 +1,161 @@
+/*
+ Theme Name:   Twenty Sixteen Child Theme
+ Description:  Theme for Finkle Associates
+ Author:       bkbartonDesign
+ Template:     twentysixteen
+ Version:      1.0.0
+*/
+
+
+h1,h2,h3,h4,h5,h6{
+ clear:none;
+ font-family: 'Open Sans', 'Helvetica', 'Arial';
+}
+
+.white-txt{
+ color:#e3e3e3;
+}
+
+.gray-txt{
+ color:#515559;
+}
+
+.light{
+ font-weight: 300;
+}
+
+b{
+ font-weight:900;
+}
+
+hr{
+ height:5px;
+ border-color: black;
+ color:black;
+}
+
+.section-contents{
+ width:80%;
+ margin:0 auto;
+ padding-top:100px;
+ padding-bottom:100px;
+}
+
+.site-inner{
+ max-width:100%;
+}
+
+.site-header{
+ background-color:red;
+ padding-top:1em;
+ padding-bottom:1em;
+}
+
+.site-content{
+ padding:0;
+}
+
+.main-navigation a {
+  color:black;
+}
+
+.main-navigation a:hover{
+ color:white;
+}
+
+
+.header-image .entry-title{
+ font-family: 'Open Sans', 'Helvetica', 'Arial';
+ font-size:5rem;
+}
+
+.entry-content{
+ margin-left:0;
+ margin-right:0;
+}
+
+.title-about-finkel > h2{
+ font-weight:300;
+ font-size: 2em;
+ color:white;
+ margin-bottom: 16px;
+}
+
+.title-about-finkel > h3{
+ font-weight:300;
+ font-size: 2em;
+ color:#737373;
+ margin-top: 0px;
+ margin-bottom:16px;
+}
+
+
+.header-image{
+ margin-top:0;
+ background-image: url("https://wpthemetest1-bkbartondesign.c9users.io/wp-content/uploads/2016/09/cropped-FinkelBackground-4.jpg");
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ margin: 0;
+ padding: 0;
+ position: relative;
+ width: 100%;
+ height: 649px;
+ cursor: pointer;
+}
+
+.header-overlay-text{
+ font-size: 65px;
+ color: #fff;
+ text-align: center;
+ position: relative;
+ padding-top: 167px;
+ font-weight: 800;
+}
+
+
+
+.left{
+ float:left;
+ margin-right:1em;
+ margin-bottom:1em;
+}
+
+#intro{
+ font-size:2rem;
+ color:;
+}
+
+#about{
+ background-color:#515559;
+ padding-top:100px;
+}
+
+@media screen and (min-width: 56.875em){
+ 
+ #page .entry-content{
+   margin-left:0 !important;
+   margin-right:0 !important;
+ }
+}
+
+
+@media screen and (max-width: 1050px){
+ 
+ .header-image {
+    padding: 0;
+    height: 566px;
+    height: 87vh;
+ }
+ 
+ .header-overlay-text{
+  padding-top:0;
+ }
+ 
+ .header-image .entry-title{
+  font-family: 'Open Sans', 'Helvetica', 'Arial';
+  font-size: 8.8vw;
+  padding-top: 25vh;
+ }
+ 
+}
