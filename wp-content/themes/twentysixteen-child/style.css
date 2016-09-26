@@ -6,11 +6,31 @@
  Version:      1.0.0
 */
 
+html, body{
+ margin:0;
+ padding:0;
+}
 
 h1,h2,h3,h4,h5,h6{
  clear:none;
  font-family: 'Open Sans', 'Helvetica', 'Arial';
+ font-weight:500;
 }
+
+/* h1 for SEO and .h1 to piggyback font size */
+h1, h2{
+ font-size:5rem;
+}
+
+h2, .light{
+ font-weight: 300;
+}
+
+h3{
+ font-size: 2em;
+}
+
+
 
 .white-txt{
  color:#e3e3e3;
@@ -20,16 +40,14 @@ h1,h2,h3,h4,h5,h6{
  color:#515559;
 }
 
-.light{
- font-weight: 300;
-}
 
-b{
+
+b, .bold{
  font-weight:900;
 }
 
 hr{
- height:5px;
+ height:11px;
  border-color: black;
  color:black;
 }
@@ -45,10 +63,18 @@ hr{
  max-width:100%;
 }
 
+
 .site-header{
  background-color:red;
  padding-top:1em;
  padding-bottom:1em;
+ position: fixed;
+ top: 51px;
+ /*top: 21px;*/
+ left: 21px;
+ right:21px;
+ z-index: 1;
+ min-width: 95%;
 }
 
 .site-content{
@@ -63,10 +89,20 @@ hr{
  color:white;
 }
 
+.hero-image,
+.header-image{
+ margin-top:150px;
+}
 
 .header-image .entry-title{
  font-family: 'Open Sans', 'Helvetica', 'Arial';
- font-size:5rem;
+ 
+}
+
+
+.primary-menu .menu-item a.active{
+ color:#e3e3e3;
+ border-bottom:3px solid #e3e3e3;
 }
 
 .entry-content{
@@ -122,14 +158,19 @@ hr{
 }
 
 #intro{
- font-size:2rem;
- color:;
+ /*font-size:2rem;*/
 }
 
 #about{
  background-color:#515559;
  padding-top:100px;
 }
+
+.img-about-finkel img{
+ border:11px solid black;
+ width:400px;
+}
+
 
 @media screen and (min-width: 56.875em){
  

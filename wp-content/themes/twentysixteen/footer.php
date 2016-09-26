@@ -55,5 +55,6 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>-child/js/finkel.js"></script>
 </body>
 </html>

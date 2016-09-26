@@ -74,10 +74,11 @@
 					</div><!-- .site-header-menu -->
 				<?php endif; ?>
 			</div><!-- .site-header-main -->
+			<div id="zzz">zzz</div>
 		</header><!-- .site-header -->
 
 
-        <div id="hero-image">
+        <div id="hero-image" class="hero-image">
             <?php if ( get_header_image() ) : ?>
     		<?php
     			/**
@@ -98,7 +99,7 @@
     			<div class="header-image">
     				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
     					<div class="header-overlay-text">
-							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+							<?php the_title( '<h1 class="finkel-title bold">', '</h1>' ); ?>
 						</div><!-- .entry-header -->
     				</a>
     			</div><!-- .header-image -->
