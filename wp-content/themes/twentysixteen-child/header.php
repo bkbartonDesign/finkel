@@ -77,37 +77,37 @@
 			<div id="zzz">zzz</div>
 		</header><!-- .site-header -->
 
-
-        <div id="hero-image" class="hero-image">
-            <?php if ( get_header_image() ) : ?>
-    		<?php
-    			/**
-    			 * Filter the default twentysixteen custom header sizes attribute.
-    			 *
-    			 * @since Twenty Sixteen 1.0
-    			 *
-    			 * @param string $custom_header_sizes sizes attribute
-    			 * for Custom Header. Default '(max-width: 709px) 85vw,
-    			 * (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px'.
-    			 */
-    			$custom_header_sizes = apply_filters( 
-    			    'twentysixteen_custom_header_sizes', 
-    			    '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' 
-    			);
-    		?>
-			<?php  if(is_front_page()) : ?>
-    			<div class="header-image">
-    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-    					<div class="header-overlay-text">
-							<?php the_title( '<h1 class="finkel-title bold">', '</h1>' ); ?>
-						</div><!-- .entry-header -->
-    				</a>
-    			</div><!-- .header-image -->
-			<?php endif; // is_front_page(); ?>
-		<?php endif; // End header image check. ?>
-            
-        </div>
-
-		<div id="content" class="site-content">
+		<div class="full-page">
+	        <div id="hero-image" class="hero-image">
+	            <?php if ( get_header_image() ) : ?>
+	    		<?php
+	    			/**
+	    			 * Filter the default twentysixteen custom header sizes attribute.
+	    			 *
+	    			 * @since Twenty Sixteen 1.0
+	    			 *
+	    			 * @param string $custom_header_sizes sizes attribute
+	    			 * for Custom Header. Default '(max-width: 709px) 85vw,
+	    			 * (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px'.
+	    			 */
+	    			$custom_header_sizes = apply_filters( 
+	    			    'twentysixteen_custom_header_sizes', 
+	    			    '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' 
+	    			);
+	    		?>
+				<?php  if(is_front_page()) : ?>
+	    			<div class="header-image">
+	    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+	    					<div class="header-overlay-text">
+								<?php the_title( '<h1 class="finkel-title bold">', '</h1>' ); ?>
+							</div><!-- .entry-header -->
+	    				</a>
+	    			</div><!-- .header-image -->
+				<?php endif; // is_front_page(); ?>
+			<?php endif; // End header image check. ?>
+	            
+	        </div>
+	
+			<div id="content" class="site-content">
 
         
