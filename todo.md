@@ -18,6 +18,10 @@ https://github.com/apgregory/finkelsplash/tree/gh-pages
 Style Examples:
 http://www.prjt.net/london-art-weekend/
 
+WP examples custom fields
+
+https://www.advancedcustomfields.com/resources/code-examples/
+
 **Completed**
 - Copy all text.
 -- logo size

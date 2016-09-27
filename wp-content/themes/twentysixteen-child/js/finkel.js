@@ -14,7 +14,7 @@
   
     var links = $('header .menu-item  a'),
         header = $('.site-header'),
-        sectionPadding = parseInt( $('.section-contents').css('paddingTop').slice(0,-2) ),
+        //sectionPadding = parseInt( $('.section-contents').css('paddingTop').slice(0,-2) ),
         pageMargin = parseInt( $("#page").css("margin").slice(0,-2) ),
         sectionPos = [],
         hdr = $(header).outerHeight(),
@@ -63,6 +63,7 @@
       e.preventDefault();
       
       var s = $(".full-page");
+      console.log("!!");
       $(document).off("scroll");
       
       var hash = this.hash;
