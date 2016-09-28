@@ -78,7 +78,7 @@
 		</header><!-- .site-header -->
 
 		<div class="full-page">
-	        <div id="hero-image" class="hero-image">
+	        
 	            <?php if ( get_header_image() ) : ?>
 	    		<?php
 	    			/**
@@ -96,17 +96,19 @@
 	    			);
 	    		?>
 				<?php  if(is_front_page()) : ?>
-	    			<div class="header-image">
-	    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-	    					<div class="header-overlay-text">
-								<?php the_title( '<h1 class="finkel-title bold">', '</h1>' ); ?>
-							</div><!-- .entry-header -->
-	    				</a>
-	    			</div><!-- .header-image -->
+					<div id="hero-image" class="hero-image">
+		    			<div class="header-image">
+		    				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+		    					<div class="header-overlay-text">
+									<?php the_title( '<h1 class="finkel-title bold">', '</h1>' ); ?>
+								</div><!-- .entry-header -->
+		    				</a>
+		    			</div><!-- .header-image -->
+		    		</div>
 				<?php endif; // is_front_page(); ?>
 			<?php endif; // End header image check. ?>
 	            
-	        </div>
+	        
 	
 			<div id="content" class="site-content">
 

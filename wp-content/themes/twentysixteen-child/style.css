@@ -6,6 +6,8 @@
  Version:      1.0.0
 */
 
+/* element overrides */
+
 html, body{
  margin:0;
  padding:0;
@@ -31,136 +33,6 @@ h3{
  font-size: 2em;
 }
 
-.san-serif{
- font-family:Montserrat, "Helvetica Neue", sans-serif;
-}
-
-.finkel-home{}
-
-.section-content{
- width:80%;
- margin:0 auto;
- padding:100px 0;
- font-size:18px;
-}
-
-
-.intro .section-content{
-    color: #515559;
-    /*font-family: adobe-caslon-pro;*/
-    box-sizing: border-box;
-    padding: 43px 0;
-    
-    letter-spacing: 1.5px;
-    line-height: 2;
-    text-align: justify;
-}
-
-.intro .section-content > p{
- font-size: 32px;
-}
-
-.attorneys .section-title{
- margin-left:236px;
- margin-bottom:20px;
- letter-spacing: 0.046875em;
-}
-
-.attorneys .attorney-title{
- margin-bottom:1em;
-}
-
-.attorneys .attorney-title p{
-  letter-spacing: 0.046875em;
-  margin-bottom:0px;
-}
-
-
-.attorneys .attorney-image{
- float:left;
- padding-right:20px;
-}
-
-.attorneys .attorney-bio > p{
- text-align: justify;
- line-height: 1.8;
- letter-spacing: 1.2px;
- font-size: 24px;
-    margin: 20px 0;
-    color:#e3e3e3;
-}
-
-.practice{
- background-color:#333333;
- background-image:url("https://wpthemetest1-bkbartondesign.c9users.io/wp-content/uploads/2016/09/cropped-FinkelBackground-4.jpg");
-}
-
-.practice .section-content{
- display:flex;
- -webkit-justify-content: space-around;
- justify-content:         space-around;
- font-size:18px;
- line-height:3;
- font-weight:700;
- font-family:Montserrat, "Helvetica Neue", sans-serif;
- /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
- color:#C62A22;
-}
-
-.practice .practice-list-wrapper{
-  background-color:#fff;
-  width:40%;
-  border:1px solid black;
-  padding:16px;
-}
-
-.practice p{
- line-height:.25;
- color:#515559;
-}
-
-
-.practice-dek  {
- list-style-type:none;
- margin-left:-24px;
- 
-}
-
-.practice-title{
-  margin-bottom:12px;
-}
-
-
-.contact {
- background-color:#EBECEE;
-}
-
-.contact-form{
- background-color:#515559;
- padding:16px;
- 
-}
-
-div.wpforms-container-full .wpforms-form label.wpforms-error {
-  background-color:#e3e3e3;
-  padding:5px;
-}
-
-input{
- font-family:Montserrat, "Helvetica Neue", sans-serif;
-}
-
-
-.white-txt{
- color:#e3e3e3;
-}
-
-.gray-txt{
- color:#515559;
-}
-
-
-
 b, .bold{
  font-weight:900;
 }
@@ -171,12 +43,32 @@ hr{
  color:black;
 }
 
-.section-contents{
- width:80%;
- margin:0 auto;
- padding-top:150px;
- padding-bottom:100px;
+/* style classes */
+
+.white-txt{
+ color:#e3e3e3;
 }
+
+.gray-txt{
+ color:#515559;
+}
+
+input{
+ font-family:Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.san-serif{
+ font-family:Montserrat, "Helvetica Neue", sans-serif;
+}
+
+
+.left{
+ float:left;
+ margin-right:1em;
+ margin-bottom:1em;
+}
+
+/* site level wp overides */
 
 .site-inner{
  max-width:100%;
@@ -188,17 +80,33 @@ hr{
  padding-top:1em;
  padding-bottom:1em;
  position: fixed;
- 
- top: 21px;
- left: 21px;
- right:21px;
+ top: 0;
+ /*left: 21px;*/
+ /*right:21px;*/
  z-index: 1;
- min-width: 95%;
+ min-width: 100%;
 }
 
 .site-content{
  padding:0;
 }
+
+
+/* blog level styles */
+
+#page .site-main{
+ padding-top:3em;
+}
+
+.site-main .post{
+ margin-top:90px;
+}
+
+article .entry-title{
+ font-family: inherit;
+}
+
+/* navigation overides */
 
 .main-navigation a {
   color:#e3e3e3;
@@ -212,16 +120,6 @@ hr{
  border:3px soild #e3e3e3;
 }
 
-.hero-image,
-.header-image{
- margin-top: 13vh;
-}
-
-.header-image .entry-title{
- font-family: 'Open Sans', 'Helvetica', 'Arial';
- 
-}
-
 .primary-menu .menu-iten a{
   letter-spacing: 1px;
   color: #fff;
@@ -232,6 +130,22 @@ hr{
  color:#e3e3e3;
  border-bottom:3px solid #e3e3e3;
  padding-bottom:1px;
+}
+
+/* header */
+
+.hero-image,
+.header-image{
+ margin-top: 13vh;
+}
+
+.header-image .entry-title{
+ font-family: 'Open Sans', 'Helvetica', 'Arial';
+ 
+}
+
+.entry-title a, .entry-title a:hover{
+ color:#515559;
 }
 
 .entry-content{
@@ -278,26 +192,130 @@ hr{
  font-weight: 800;
 }
 
+/* section-content styles */
 
-
-.left{
- float:left;
- margin-right:1em;
- margin-bottom:1em;
+.section-content{
+ width:80%;
+ margin:0 auto;
+ padding:100px 0;
+ font-size:18px;
 }
 
-#intro{
- /*font-size:2rem;*/
+
+/* INTRO */
+
+.intro .section-content{
+    color: #515559;
+    /*font-family: adobe-caslon-pro;*/
+    box-sizing: border-box;
+    padding: 43px 0;
+    
+    letter-spacing: 1.5px;
+    line-height: 2;
+    text-align: justify;
 }
 
-#attorneys{
+.intro .section-content > p{
+ font-size: 32px;
+}
+
+
+/* ATTORNEY */
+
+.attorneys{
  background-color:#515559;
 }
 
-.img-about-finkel img{
- border:11px solid black;
- width:400px;
+.attorneys .section-title{
+ margin-left:236px;
+ margin-bottom:20px;
+ letter-spacing: 0.046875em;
 }
+
+.attorneys .attorney-title{
+ margin-bottom:1em;
+}
+
+.attorneys .attorney-title p{
+  letter-spacing: 0.046875em;
+  margin-bottom:0px;
+}
+
+
+.attorneys .attorney-image{
+ float:left;
+ padding-right:20px;
+}
+
+.attorneys .attorney-bio > p{
+ text-align: justify;
+ line-height: 1.8;
+ letter-spacing: 1.2px;
+ font-size: 24px;
+ margin: 20px 0;
+ color:#e3e3e3;
+}
+
+/* PRACTICE */
+
+.practice{
+ background-color:#333333;
+ background-image:url("https://wpthemetest1-bkbartondesign.c9users.io/wp-content/uploads/2016/09/cropped-FinkelBackground-4.jpg");
+}
+
+.practice .section-content{
+ display:flex;
+ -webkit-justify-content: space-around;
+ justify-content:         space-around;
+ font-size:18px;
+ line-height:3;
+ font-weight:700;
+ font-family:Montserrat, "Helvetica Neue", sans-serif;
+ /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+ color:#C62A22;
+}
+
+.practice .practice-list-wrapper{
+  background-color:#fff;
+  width:40%;
+  border:1px solid black;
+  padding:16px;
+}
+
+.practice p{
+ line-height:.25;
+ color:#515559;
+}
+
+
+.practice-dek  {
+ list-style-type:none;
+ margin-left:-24px;
+ 
+}
+
+.practice-title{
+  margin-bottom:12px;
+}
+
+/* CONTACT FORM */
+
+.contact {
+ background-color:#EBECEE;
+}
+
+.contact-form{
+ background-color:#515559;
+ padding:16px;
+ 
+}
+
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  background-color:#e3e3e3;
+  padding:5px;
+}
+
+
 
 @media screen and (max-width: 425px){
  
@@ -313,7 +331,7 @@ hr{
   height:24vh;
  }
  
- .hero-image{
+ .hero-image {
   margin-top: 13vh;
  }
  
@@ -343,7 +361,7 @@ hr{
  
  .site-header{
   
-  min-width:1vw;
+ 
   
  }
  .header-image {
@@ -362,4 +380,14 @@ hr{
   padding-top: 25vh;
  }
  
+}
+
+
+/* Removes wp2016 color border */
+.site{
+ margin:0 !important;
+}
+
+body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+  height: 0;
 }

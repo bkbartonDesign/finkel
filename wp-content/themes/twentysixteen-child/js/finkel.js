@@ -25,7 +25,7 @@
         
         
     
-    $('.site-header').css({top:pageMargin});
+    // $('.site-header').css({top:pageMargin});
     var h  = 0;
     
     console.log("From top:"+ $(header).position().top, "header height:"+$(header).outerHeight(true) , "How far away from top:"+$(header).offset().top);
