@@ -131,6 +131,26 @@ h3{
 }
 
 
+.contact {
+ background-color:#EBECEE;
+}
+
+.contact-form{
+ background-color:#515559;
+ padding:16px;
+ 
+}
+
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  background-color:#e3e3e3;
+  padding:5px;
+}
+
+input{
+ font-family:Montserrat, "Helvetica Neue", sans-serif;
+}
+
+
 .white-txt{
  color:#e3e3e3;
 }
@@ -211,6 +231,7 @@ hr{
 .primary-menu .menu-item a.active{
  color:#e3e3e3;
  border-bottom:3px solid #e3e3e3;
+ padding-bottom:1px;
 }
 
 .entry-content{

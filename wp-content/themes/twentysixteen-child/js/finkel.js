@@ -23,6 +23,8 @@
         hdr4 = $(header).offset().top - pageMargin;
         hdr5 = $(header).position().top + $(header).outerHeight(true);
         
+        
+    
     $('.site-header').css({top:pageMargin});
     var h  = 0;
     
@@ -43,9 +45,11 @@
 
     // cache sectionPos ... need to reinit if screensize changes.
     $.each(links, function(i,link){
-      var key = $(link).attr('href'),
-          val = $(key).offset().top - hdr - pageMargin;
+      var key = $(link).attr('href');
+      try{
+          var val = $(key).offset().top - hdr - pageMargin;
           sectionPos[key] = val;
+      }catch(e){/*swallow error*/}
     });
 
   

@@ -17,7 +17,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="finkel-home">
     		<?php if(get_field('intro')) : ?> 
-                <section class="intro" id="intro">
+                <section class="about" id="about">
                     <div class="section-content">
                         <?php echo get_field('intro'); ?>
                     </div>    
@@ -61,6 +61,19 @@ get_header(); ?>
                     </div>    
                 </section>
             <?php endif ?>
+            
+            
+                <section class="contact" id="contact">
+                    <div class="section-content">
+                        <div class="contact-form">
+                            <div class="san-serif white-txt">Contact</div>
+                            <?php echo do_shortcode("[wpforms id='120']"); ?>
+                        </div>
+                    </div>
+                </section>
+                
+            
+            
         </div>
 	</main><!-- .site-main -->
 	<?php get_sidebar( 'content-bottom' ); ?>
