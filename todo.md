@@ -26,3 +26,12 @@ https://www.advancedcustomfields.com/resources/code-examples/
 - Copy all text.
 -- logo size
 - Link to different sections of single page
+- 
+
+inner navigation, consistent typeface, and no bulletpoints.
+
+
+Deployment:
+- http://www.wpbeginner.com/wp-tutorials/how-to-fix-wordpress-login-page-refreshing-and-redirecting-issue/
+
+- http://www.bilalakil.me/production-ready-cloud9-wordpress-development/

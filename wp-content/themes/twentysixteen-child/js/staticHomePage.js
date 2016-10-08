@@ -1,6 +1,8 @@
 /*global $,jQuery*/
 
-// cache the section top positions
+// FYI the script tag for this js script is located in a conditional php call at the bottom of twentysixteen-child/footer.php.
+// The reason for this is the preventDefault of the top nav on the static homepage makes navigation not work when you go to
+// navigate to a post page.
 
 
 
@@ -12,7 +14,9 @@
   
   //var bottom = $el.position().top + $el.offset().top + $el.outerHeight(t‌​rue);
   
-    var links = $('header .menu-item  a'),
+    //var links = $('a[href^="#"]'),
+    var links = $('header .menu-item > a[href*="#"]'),
+        hashedLinks = [],
         header = $('.site-header'),
         //sectionPadding = parseInt( $('.section-contents').css('paddingTop').slice(0,-2) ),
         pageMargin = parseInt( $("#page").css("margin").slice(0,-2) ),
@@ -24,13 +28,14 @@
         hdr5 = $(header).position().top + $(header).outerHeight(true);
         
         
+  console.log(links);
     
     // $('.site-header').css({top:pageMargin});
     var h  = 0;
     
-    console.log("From top:"+ $(header).position().top, "header height:"+$(header).outerHeight(true) , "How far away from top:"+$(header).offset().top);
-    console.log(hdr, hdr2, hdr3, hdr4);
-    
+    //console.log("From top:"+ $(header).position().top, "header height:"+$(header).outerHeight(true) , "How far away from top:"+$(header).offset().top);
+    //console.log(hdr, hdr2, hdr3, hdr4);
+    console.log(hashedLinks);
     
     function sectPos(){
       h = $(header).offset().top + $(header).outerHeight(true); 
@@ -92,7 +97,6 @@
             $.when(window.location.hash = target).done(
               function(x){
                 $('html, body').scrollTop($(target).offset().top -  hdr)
-                console.log("::");
               }
             );
             //$('html, body').scrollTop(target.offset().top - ($(header).offset().top + $(header).outerHeight(true)));
@@ -148,32 +152,33 @@
 
     var z = $("#zzz");  
     function onScroll(event){
-      
-      
       //var scrollPosition = $(document).scrollTop(); // 1 => 5100
-      var scrollPosition =  $(header).offset().top;
-      $(z).html($(header).offset().top);
-      
-      $.each(links, function (i,link) {
-      
-        var linkHref = $(link).attr('href'), //["#intro","#about",...];
-            sectionByID = $(linkHref); // $("#intro");
-         
-        if (
-            scrollPosition >= ( sectionByID.offset().top - hdr) && // if scrolled past the top of section - header height
-            scrollPosition < ( sectionByID.offset().top + sectionByID.outerHeight() ) // if scrollPosition is less than the bottom height of section...
-          ){
-            $(z).html(scrollPosition +" | "+ (sectionByID.offset().top - hdr)) ;
-            makeLinkActive($(link));
-            // $(links).removeClass("active");
-            // $(link).addClass("active");
-            //console.log(link,scrollPosition,sectionByID.position().top - hdr);
-        }
-        else{
-          $(link).removeClass("active");
-        }
+      try{
+        var scrollPosition =  $(header).offset().top;
+        $(z).html($(header).offset().top);
         
-      });
+        $.each(links, function (i,link) {
+          try{
+                //var linkHref = $(link).attr('href'), //["#intro","#about",...];
+                var sectionByID = $(link.hash); // $("#intro");
+                //zz = link.hash;
+                //console.log(zz);
+            if (
+                scrollPosition >= ( sectionByID.offset().top - hdr) && // if scrolled past the top of section - header height
+                scrollPosition < ( sectionByID.offset().top + sectionByID.outerHeight() ) // if scrollPosition is less than the bottom height of section...
+              ){
+                $(z).html(scrollPosition +" | "+ (sectionByID.offset().top - hdr)) ;
+                makeLinkActive($(link));
+                // $(links).removeClass("active");
+                // $(link).addClass("active");
+                //console.log(link,scrollPosition,sectionByID.position().top - hdr);
+            }
+            else{
+              $(link).removeClass("active");
+            }
+          }catch(ee){console.log("in each", link, ee)}
+        });
+      }catch(e){console.log("parent", e)};
     }
 
   })

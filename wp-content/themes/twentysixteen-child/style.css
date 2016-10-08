@@ -13,9 +13,10 @@ html, body{
  padding:0;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,.main-navigation{
  clear:none;
- font-family:Montserrat, "Helvetica Neue", sans-serif;
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
  /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
  font-weight:500;
 }
@@ -54,11 +55,13 @@ hr{
 }
 
 input{
- font-family:Montserrat, "Helvetica Neue", sans-serif;
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
 }
 
 .san-serif{
- font-family:Montserrat, "Helvetica Neue", sans-serif;
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
 }
 
 
@@ -107,17 +110,22 @@ article .entry-title{
 }
 
 /* navigation overides */
+.main-navigation{
+ font-family: sans-serif;
+ font-size: 18px;
+ letter-spacing: 1px;
+}
 
-.main-navigation a {
-  color:#e3e3e3;
+a, .main-navigation a {
+  color:white;
 }
 
 .main-navigation a:hover{
- color:#e3e3e3;
+ color:#fff;
 }
 
 .main-navigation a:active{
- border:3px soild #e3e3e3;
+ border:3px soild #fff;
 }
 
 .primary-menu .menu-iten a{
@@ -127,9 +135,13 @@ article .entry-title{
 }
 
 .primary-menu .menu-item a.active{
- color:#e3e3e3;
+ color:#ffffff;
  border-bottom:3px solid #e3e3e3;
  padding-bottom:1px;
+}
+
+.main-navigation .current-menu-item > a{
+ font-weight:500;
 }
 
 /* header */
@@ -204,7 +216,7 @@ article .entry-title{
 
 /* INTRO */
 
-.intro .section-content{
+.about .section-content{
     color: #515559;
     /*font-family: adobe-caslon-pro;*/
     box-sizing: border-box;
@@ -215,7 +227,7 @@ article .entry-title{
     text-align: justify;
 }
 
-.intro .section-content > p{
+.about .section-content > p{
  font-size: 32px;
 }
 
@@ -270,7 +282,8 @@ article .entry-title{
  font-size:18px;
  line-height:3;
  font-weight:700;
- font-family:Montserrat, "Helvetica Neue", sans-serif;
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
  /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
  color:#C62A22;
 }
@@ -336,7 +349,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
  }
  
  .header-image .finkel-title{
-  font-family: 'Open Sans', 'Helvetica', 'Arial';
+  font-family: sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
   font-size: 8.8vw;
   padding-top: 25vh;
  }

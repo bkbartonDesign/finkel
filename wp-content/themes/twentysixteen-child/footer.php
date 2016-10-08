@@ -58,6 +58,9 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>-child/js/finkel.js"></script>
+<?php if(is_front_page()) : ?>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>-child/js/staticHomePage.js"></script>
+<?php endif ?>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>-child/js/test.js"></script>
 </body>
 </html>

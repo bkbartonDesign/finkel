@@ -14,7 +14,7 @@ return array( ‘WP_Image_Editor_GD’, ‘WP_Image_Editor_Imagick’ );
 
 
 
-add_filter( 'twentysixteen_custom_header_args', 'wpb_new_header_size');
+//add_filter( 'twentysixteen_custom_header_args', 'wpb_new_header_size');
 //add your parameters in - https://codex.wordpress.org/Custom_Headers
 function wpb_new_header_size($array) {
 		$array = array (

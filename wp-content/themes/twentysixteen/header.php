@@ -47,8 +47,6 @@
 					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
 
 					<div id="site-header-menu" class="site-header-menu">
-						
-						
 						<?php if ( has_nav_menu( 'primary' ) ) : ?>
 							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 								<?php
@@ -75,7 +73,6 @@
 						<?php endif; ?>
 					</div><!-- .site-header-menu -->
 				<?php endif; ?>
-				
 			</div><!-- .site-header-main -->
 
 			<?php if ( get_header_image() ) : ?>
