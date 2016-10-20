@@ -6,7 +6,7 @@ function enqueue_parent_styles() {
    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
 
-add_filter( ‘wp_image_editors’, ‘change_graphic_lib’ );
+add_filter( "wp_image_editors", "change_graphic_lib" );
 
 function change_graphic_lib($array) {
 return array( ‘WP_Image_Editor_GD’, ‘WP_Image_Editor_Imagick’ );

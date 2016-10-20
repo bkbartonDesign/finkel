@@ -74,7 +74,6 @@
 					</div><!-- .site-header-menu -->
 				<?php endif; ?>
 			</div><!-- .site-header-main -->
-			<!--<div id="zzz">zzz</div>-->
 		</header><!-- .site-header -->
 
 		<div class="full-page">
