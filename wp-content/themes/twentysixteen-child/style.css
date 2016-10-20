@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6,.main-navigation{
  clear:none;
  font-family: sans-serif;
  /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
- /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+ /*font-family: "Open Sans", "Helvetica", "Arial";*/
  font-weight:500;
 }
 
@@ -79,7 +79,7 @@ input{
 
 
 .site-header{
- background-color:red;
+ background-color:#C62A22;
  padding-top:1em;
  padding-bottom:1em;
  position: fixed;
@@ -152,7 +152,7 @@ a, .main-navigation a {
 }
 
 .header-image .entry-title{
- font-family: 'Open Sans', 'Helvetica', 'Arial';
+ font-family: "Open Sans", "Helvetica", "Arial";
  
 }
 
@@ -284,7 +284,7 @@ a, .main-navigation a {
  font-weight:700;
  font-family: sans-serif;
  /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
- /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+ /*font-family: "Open Sans", "Helvetica", "Arial";*/
  color:#C62A22;
 }
 
@@ -337,6 +337,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 @media screen and (max-width: 782px){
  
  .site-header{
+  
   left:0;
   right:0;
   top:0;
@@ -350,7 +351,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
  
  .header-image .finkel-title{
   font-family: sans-serif;
-  /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+  /*font-family: "Open Sans", "Helvetica", "Arial";*/
   font-size: 8.8vw;
   padding-top: 25vh;
  }
@@ -389,7 +390,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
  }
  
  .header-image .finkel-title{
-  /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+  /*font-family: "Open Sans", "Helvetica", "Arial";*/
   font-size: 5.8vw;
   padding-top: 25vh;
  }

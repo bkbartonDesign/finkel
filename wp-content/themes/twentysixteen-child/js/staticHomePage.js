@@ -14,11 +14,11 @@
   
   //var bottom = $el.position().top + $el.offset().top + $el.outerHeight(t‌​rue);
   
-    //var links = $('a[href^="#"]'),
-    var links = $('header .menu-item > a[href*="#"]'),
+    //var links = $("a[href^="#"]"),
+    var links = $("header .menu-item > a[href*="#"]"),
         hashedLinks = [],
-        header = $('.site-header'),
-        //sectionPadding = parseInt( $('.section-contents').css('paddingTop').slice(0,-2) ),
+        header = $(".site-header"),
+        //sectionPadding = parseInt( $(".section-contents").css("paddingTop").slice(0,-2) ),
         pageMargin = parseInt( $("#page").css("margin").slice(0,-2) ),
         sectionPos = [],
         hdr = $(header).outerHeight(),
@@ -30,7 +30,7 @@
         
   console.log(links);
     
-    // $('.site-header').css({top:pageMargin});
+    // $(".site-header").css({top:pageMargin});
     var h  = 0;
     
     //console.log("From top:"+ $(header).position().top, "header height:"+$(header).outerHeight(true) , "How far away from top:"+$(header).offset().top);
@@ -44,13 +44,13 @@
     }
     
     function makeLinkActive( activeLInk ){
-      $(links).removeClass('active');
-      $(activeLInk).addClass('active');
+      $(links).removeClass("active");
+      $(activeLInk).addClass("active");
     }       
 
     // cache sectionPos ... need to reinit if screensize changes.
     $.each(links, function(i,link){
-      var key = $(link).attr('href');
+      var key = $(link).attr("href");
       try{
           var val = $(key).offset().top - hdr - pageMargin;
           sectionPos[key] = val;
@@ -61,13 +61,13 @@
     $(document).on("scroll", onScroll);
 
     if (window.location.hash) {
-      $('.primary-menu > .menu-item a[href="'+window.location.hash+'"]').addClass('active');
+      $(".primary-menu > .menu-item a[href=""+window.location.hash+""]").addClass("active");
       //console.log(window.location.hash);
     }
   
-    var target = '';  
+    var target = "";  
   
-    $(links).on('click', function (e) {
+    $(links).on("click", function (e) {
       
       e.preventDefault();
       
@@ -92,18 +92,18 @@
         $(s).animate(
           {opacity:0},
           100,
-          'swing',
+          "swing",
           function(){
             $.when(window.location.hash = target).done(
               function(x){
-                $('html, body').scrollTop($(target).offset().top -  hdr)
+                $("html, body").scrollTop($(target).offset().top -  hdr)
               }
             );
-            //$('html, body').scrollTop(target.offset().top - ($(header).offset().top + $(header).outerHeight(true)));
+            //$("html, body").scrollTop(target.offset().top - ($(header).offset().top + $(header).outerHeight(true)));
             $(s).animate(
               {opacity:1},
               300,
-              'swing',
+              "swing",
               function(){
                 $(z).html($(header).offset().top - hdr+" | "+ $(header).offset().top);
                 console.log("cool");
@@ -113,38 +113,38 @@
           }
         );
       //}
-      // $(s).toggle('fast',function(){
+      // $(s).toggle("fast",function(){
         
       // })
     
-      // $('html, body').stop().animate(
+      // $("html, body").stop().animate(
       //   {
-      //     'scrollTop': $target.offset().top - hdr4 - sectionPadding
-      //     // 'scrollTop': $target.offset().top - hdr - sectionPadding 
-      //   }, 800, 'swing', function () {
+      //     "scrollTop": $target.offset().top - hdr4 - sectionPadding
+      //     // "scrollTop": $target.offset().top - hdr - sectionPadding 
+      //   }, 800, "swing", function () {
       //     window.location.hash = _hash;
       //     $(document).on("scroll", onScroll);
       // });
     });
   
   
-    $('.header-image > a').on('click', function(e){
+    $(".header-image > a").on("click", function(e){
       e.preventDefault();
       
-      $('html, body')
+      $("html, body")
         .stop()
         .animate(
           {
-            'scrollTop': $('#intro').offset().top - hdr3
+            "scrollTop": $("#intro").offset().top - hdr3
           },
-          800, 'swing'
+          800, "swing"
         );
     });
   
-    $('#demoform').on('submit', function(e){
+    $("#demoform").on("submit", function(e){
       e.preventDefault();
-      $('.form-messages').text('Message sent successfully. We will get back to you shortly.');
-      $('#msg, #name, #mail').val('');
+      $(".form-messages").text("Message sent successfully. We will get back to you shortly.");
+      $("#msg, #name, #mail").val("");
     });
     
 
@@ -159,7 +159,7 @@
         
         $.each(links, function (i,link) {
           try{
-                //var linkHref = $(link).attr('href'), //["#intro","#about",...];
+                //var linkHref = $(link).attr("href"), //["#intro","#about",...];
                 var sectionByID = $(link.hash); // $("#intro");
                 //zz = link.hash;
                 //console.log(zz);

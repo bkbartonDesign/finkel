@@ -16,14 +16,14 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="finkel-home">
-    		<?php if(get_field('intro')) : ?> 
+    		<?php if(get_field("intro")) : ?> 
                 <section class="about" id="about">
                     <div class="section-content">
-                        <?php echo get_field('intro'); ?>
+                        <?php echo get_field("intro"); ?>
                     </div>    
                 </section>
             <?php endif ?>
-    		<?php if(get_field('attorney_name')): ?>
+    		<?php if(get_field("attorney_name")): ?>
                 <section class="attorneys" id="attorneys">
                     <div class="section-content">
                         
@@ -33,31 +33,31 @@ get_header(); ?>
                         
                         <?php 
         
-                            $image = get_field('attorney_image');
+                            $image = get_field("attorney_image");
                             
                             if( !empty($image) ): ?>
                                 
                                 <div class="attorney-image">
-                            	    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            	    <img src="<?php echo $image["url"]; ?>" alt="<?php echo $image["alt"]; ?>" />
                                 </div>
                                 
                         <?php endif; ?>
                         
 
                         <div class="attorney-title san-serif bold white-txt">
-                            <?php echo get_field('attorney_name'); ?>
+                            <?php echo get_field("attorney_name"); ?>
                         </div>
                         
                         <div class="attorney-bio">
-                            <?php echo get_field('attorney_bio'); ?>
+                            <?php echo get_field("attorney_bio"); ?>
                         </div>
                     </div>
                 </section>
             <?php endif ?>        
-    		<?php if(get_field('areas_of_practice')):?>
+    		<?php if(get_field("areas_of_practice")):?>
                 <section class="practice" id="practice">
                     <div class="section-content">
-                        <?php echo get_field('areas_of_practice'); ?>
+                        <?php echo get_field("areas_of_practice"); ?>
                     </div>    
                 </section>
             <?php endif ?>
@@ -76,7 +76,7 @@ get_header(); ?>
             
         </div>
 	</main><!-- .site-main -->
-	<?php get_sidebar( 'content-bottom' ); ?>
+	<?php get_sidebar( "content-bottom" ); ?>
 
 </div><!-- .content-area -->
 
