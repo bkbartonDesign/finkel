@@ -1,0 +1,407 @@
+/*
+ Theme Name:   Twenty Sixteen Child Theme
+ Description:  Theme for Finkle Associates
+ Author:       bkbartonDesign
+ Template:     twentysixteen
+ Version:      1.0.0
+*/
+
+/* element overrides */
+
+html, body{
+ margin:0;
+ padding:0;
+}
+
+h1,h2,h3,h4,h5,h6,.main-navigation{
+ clear:none;
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
+ /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+ font-weight:500;
+}
+
+/* h1 for SEO and .h1 to piggyback font size */
+h1, h2{
+ font-size:5rem;
+}
+
+h2, .light{
+ font-weight: 300;
+}
+
+h3{
+ font-size: 2em;
+}
+
+b, .bold{
+ font-weight:900;
+}
+
+hr{
+ height:11px;
+ border-color: black;
+ color:black;
+}
+
+/* style classes */
+
+.white-txt{
+ color:#e3e3e3;
+}
+
+.gray-txt{
+ color:#515559;
+}
+
+input{
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
+}
+
+.san-serif{
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
+}
+
+
+.left{
+ float:left;
+ margin-right:1em;
+ margin-bottom:1em;
+}
+
+/* site level wp overides */
+
+.site-inner{
+ max-width:100%;
+}
+
+
+.site-header{
+ background-color:red;
+ padding-top:1em;
+ padding-bottom:1em;
+ position: fixed;
+ top: 0;
+ /*left: 21px;*/
+ /*right:21px;*/
+ z-index: 1;
+ min-width: 100%;
+}
+
+.site-content{
+ padding:0;
+}
+
+
+/* blog level styles */
+
+#page .site-main{
+ padding-top:3em;
+}
+
+.site-main .post{
+ margin-top:90px;
+}
+
+article .entry-title{
+ font-family: inherit;
+}
+
+/* navigation overides */
+.main-navigation{
+ font-family: sans-serif;
+ font-size: 18px;
+ letter-spacing: 1px;
+}
+
+a, .main-navigation a {
+  color:white;
+}
+
+.main-navigation a:hover{
+ color:#fff;
+}
+
+.main-navigation a:active{
+ border:3px soild #fff;
+}
+
+.primary-menu .menu-iten a{
+  letter-spacing: 1px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.primary-menu .menu-item a.active{
+ color:#ffffff;
+ border-bottom:3px solid #e3e3e3;
+ padding-bottom:1px;
+}
+
+.main-navigation .current-menu-item > a{
+ font-weight:500;
+}
+
+/* header */
+
+.hero-image,
+.header-image{
+ margin-top: 13vh;
+}
+
+.header-image .entry-title{
+ font-family: 'Open Sans', 'Helvetica', 'Arial';
+ 
+}
+
+.entry-title a, .entry-title a:hover{
+ color:#515559;
+}
+
+.entry-content{
+ margin-left:0;
+ margin-right:0;
+}
+
+.title-about-finkel > h2{
+ font-weight:300;
+ font-size: 2em;
+ color:white;
+ margin-bottom: 16px;
+}
+
+.title-about-finkel > h3{
+ font-weight:300;
+ font-size: 2em;
+ color:#737373;
+ margin-top: 0px;
+ margin-bottom:16px;
+}
+
+
+.header-image{
+ margin-top:0;
+ background-image: url("https://wpthemetest1-bkbartondesign.c9users.io/wp-content/uploads/2016/09/cropped-FinkelBackground-4.jpg");
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ margin: 0;
+ padding: 0;
+ position: relative;
+ width: 100%;
+ height: 649px;
+ cursor: pointer;
+}
+
+.header-overlay-text{
+ font-size: 65px;
+ color: #fff;
+ text-align: center;
+ position: relative;
+ padding-top: 167px;
+ font-weight: 800;
+}
+
+/* section-content styles */
+
+.section-content{
+ width:80%;
+ margin:0 auto;
+ padding:100px 0;
+ font-size:18px;
+}
+
+
+/* INTRO */
+
+.about .section-content{
+    color: #515559;
+    /*font-family: adobe-caslon-pro;*/
+    box-sizing: border-box;
+    padding: 43px 0;
+    
+    letter-spacing: 1.5px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about .section-content > p{
+ font-size: 32px;
+}
+
+
+/* ATTORNEY */
+
+.attorneys{
+ background-color:#515559;
+}
+
+.attorneys .section-title{
+ margin-left:236px;
+ margin-bottom:20px;
+ letter-spacing: 0.046875em;
+}
+
+.attorneys .attorney-title{
+ margin-bottom:1em;
+}
+
+.attorneys .attorney-title p{
+  letter-spacing: 0.046875em;
+  margin-bottom:0px;
+}
+
+
+.attorneys .attorney-image{
+ float:left;
+ padding-right:20px;
+}
+
+.attorneys .attorney-bio > p{
+ text-align: justify;
+ line-height: 1.8;
+ letter-spacing: 1.2px;
+ font-size: 24px;
+ margin: 20px 0;
+ color:#e3e3e3;
+}
+
+/* PRACTICE */
+
+.practice{
+ background-color:#333333;
+ background-image:url("https://wpthemetest1-bkbartondesign.c9users.io/wp-content/uploads/2016/09/cropped-FinkelBackground-4.jpg");
+}
+
+.practice .section-content{
+ display:flex;
+ -webkit-justify-content: space-around;
+ justify-content:         space-around;
+ font-size:18px;
+ line-height:3;
+ font-weight:700;
+ font-family: sans-serif;
+ /*font-family:Montserrat, "Helvetica Neue", sans-serif;*/
+ /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+ color:#C62A22;
+}
+
+.practice .practice-list-wrapper{
+  background-color:#fff;
+  width:40%;
+  border:1px solid black;
+  padding:16px;
+}
+
+.practice p{
+ line-height:.25;
+ color:#515559;
+}
+
+
+.practice-dek  {
+ list-style-type:none;
+ margin-left:-24px;
+ 
+}
+
+.practice-title{
+  margin-bottom:12px;
+}
+
+/* CONTACT FORM */
+
+.contact {
+ background-color:#EBECEE;
+}
+
+.contact-form{
+ background-color:#515559;
+ padding:16px;
+ 
+}
+
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  background-color:#e3e3e3;
+  padding:5px;
+}
+
+
+
+@media screen and (max-width: 425px){
+ 
+}
+
+@media screen and (max-width: 782px){
+ 
+ .site-header{
+  left:0;
+  right:0;
+  top:0;
+  min-width:100%;
+  height:24vh;
+ }
+ 
+ .hero-image {
+  margin-top: 13vh;
+ }
+ 
+ .header-image .finkel-title{
+  font-family: sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+  font-size: 8.8vw;
+  padding-top: 25vh;
+ }
+ 
+ .section-content{
+    margin: 0 auto;
+    width: 91%;
+    min-width: 0px;
+ }
+ .practice .section-content{
+  background-color:#000;
+  display:flex;
+  flex-direction: column;
+ }
+ 
+}
+
+
+
+@media screen and (max-width: 1050px){
+ 
+ 
+ .site-header{
+  
+ 
+  
+ }
+ .header-image {
+    padding: 0;
+    height: 566px;
+    height: 87vh;
+ }
+ 
+ .header-overlay-text{
+  padding-top:0;
+ }
+ 
+ .header-image .finkel-title{
+  /*font-family: 'Open Sans', 'Helvetica', 'Arial';*/
+  font-size: 5.8vw;
+  padding-top: 25vh;
+ }
+ 
+}
+
+
+/* Removes wp2016 color border */
+.site{
+ margin:0 !important;
+}
+
+body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+  height: 0;
+}
