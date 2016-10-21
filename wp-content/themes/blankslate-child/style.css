@@ -10,604 +10,604 @@
 
 
 
-span.dt-break {
-    display: none;
-}
-
-br.mb-break {
-    display: none;
-}
-
-body {
-    min-width: 1000px;
-}
-
-.hdr,
-.hdr-space {
-    width: 100%;
-    height: 133px;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -133px;
-    visibility: hidden;
-}
-
-.hdr {
-    background-color: #C62A22;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    min-width: 1000px;
-}
-.hdr-hb {
-    display: none;
-    float: right;
-}
-.hdr-nav {
-    display: inline-block;
-    margin: 85px 0 0;
-    float: right;
-}
-
-.hdr-nav-link {
-    display: inline-block;
-    font-size: 19px;
-    margin-right: 40px;
-    letter-spacing: 1px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.hdr-nav-link.active {
-    border-bottom: 3px solid #fff;
-}
-
-.hdr-logo {
-    padding: 30px 30px 0;
-    width: 286px;
-}
-
-
-.section {
-    box-sizing: border-box;
-    padding: 33px 0;
-}
-.section-contents {
-    margin: 0 auto;
-    width: 80%;
-    min-width: 1000px;
-}
-
-.section-splash {
-    background-image: url("../blankslate-child/img/splash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    height: 649px;
-    cursor: pointer;
-}
-
-.section-splash .section-contents {
-    width: 100%;
-}
-.section-splash-overlay {
-    background-color: #0b0a23;
-    opacity: 0.7;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.section-splash-hed {
-    font-size: 65px;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    padding-top: 167px;
-    font-weight: 800;
-}
-
-.section-splash-continue {
-    width: 90px;
-    position: relative;
-    display: block;
-    margin: 110px auto 0;
-}
-
-.section-about {
-    color: #515559;
-    font-family: adobe-caslon-pro;
-    box-sizing: border-box;
-    padding: 43px 0;
-    font-size: 32px;
-    letter-spacing: 1.5px;
-    line-height: 2;
-    text-align: justify;
-}
-
-.section-about-para {
-    margin: 20px 0;
-}
-
-.section-attorneys {
-    background-color: #515559;
-    color: #fff;
-    box-sizing: border-box;
-    padding: 33px 0;
-}
-
-.section-attorneys-img {
-    float: left;
-    padding: 7px 22px 13px 0px;
-}
-
-.section-attorneys-title {
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: 1.3px;
-}
-
-.section-attorneys-title-hed {
-    height: 70px;
-    font-size: 19px;
-    padding-left: 238px;
-}
-
-.section-attorneys-title-dek {
-    padding: 0 0 20px;
-    font-size: 19px;
-}
-
-.section-attorneys-para {
-    text-align: justify;
-    font-family: adobe-caslon-pro;
-    line-height: 1.8;
-    letter-spacing: 1.2px;
-    font-size: 23px;
-    margin: 20px 0;
-}
-
-.section-practice {
-    background-image: url("../blankslate-child/img/nyc.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding: 33px 0;
-    text-align: justify;
-}
-
-.section-practice .section-contents:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-
-.section-practice-group {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #fff;
-    width: 40%;
-    font-size: 19px;
-    padding: 21px;
-    line-height: 1.3;
-    font-weight: 700;
-    margin: 28px auto;
-}
-
-.practice-hed {
-    color: #C62A22;
-    padding-bottom: 25px;
-}
-
-.practice-dek > p {
-    color: #515559;
-    padding-bottom: 14px;
-    margin:0;
-}
-
-.section-contact {
-    background-color: #EBECEE;
-    padding: 60px 0;
-}
-
-.section-contact {
-}
-
-.section-contact form {
-    background-color: #B1B7BE;
-    color: #fff;
-    font-size: 0;
-    font-weight: 500;
-    padding: 15px 19px;
-    box-sizing: content-box;
-    position: relative;
-}
-
-.section-contact-hed {
-    font-size: 19px;
-    padding-left:22px;
-    padding-top:17px;
-    color:white;
-    background-color: #B1B7BE;
-}
-
-.section-contact div {}
-
-.section-contact label {
-    display: none;
-    font-size: 19px;
-}
-.ie8 .section-contact label {
-    display: block;
-}
-
-.section-contact input,
-.section-contact textarea,
-.formElement > input{
-    width: 100%;
-    border: none;
-    padding: 6px 7px 18px;
-    margin-bottom: 15px;
-    font-size: 19px;
-    box-sizing: border-box;
-    color: #515559;
-}
-.section-contact textarea {
-    resize: none;
-    min-height: 240px;
-}
-
-::-webkit-input-placeholder {
-   color: #939ba5;
-}
-:-moz-placeholder { /* Firefox 18- */
-   color: #939ba5;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #939ba5;
-}
-:-ms-input-placeholder {
-   color: #939ba5;
-}
-
-.section-contact .button {
-    text-align: right;
-}
-
-.section-contact button {
-    background-color: #515559;
-    border: none;
-    color: #fff;
-    padding: 6px 66px 18px 6px;
-    font-size: 19px;
-}
-
-.form-messages {font-size: 19px;color: #005578;position: absolute;bottom: 35px;left: 30px;}
-
-.section-blog {}
-
-.section-blog-post {
-    padding: 10px 0 20px;
-    color: #515559;
-}
-
-.section-blog-post-date {
-    font-size: 19px;
-}
-
-a .section-blog-post-title, .section-blog-post-title {
-    font-family: adobe-caslon-pro;
-    font-size: 48px;
-    text-decoration: none;
-    color:#515559;
-}
-
-.section-blog-post-para  > p{
-    font-family: adobe-caslon-pro;
-    font-size: 23px;
-    margin: 0 0 20px;
-}
-.ftr {
-    background-color: #515559;
-    color: #fff;
-    padding: 20px 10%;
-    margin: 0 auto;
-    width: 100%;
-    min-width: 1000px;
-    box-sizing: border-box;
-}
-
-@media only screen and (max-width: 1050px) {
-    span.dt-break {
-        display: inline;
-    }
-    br.dt-break {
-        display: none;
-    }
-    span.mb-break {
-        display: none;
-    }
-    br.mb-break {
-        display: inline;
-    }
-    body {
-        min-width: 0;
-    }
-
-    .hdr,
-    .hdr-space {
-        height: 100px;
-    }
-    a.anchor {
-        top: -100px;
-    }
-
-    .hdr {
-        min-width: 0px;
-    }
-
-    .hdr-hb {
-        display: inline-block;
-        width: 40px;
-        padding: 41px 30px 0px;
-    }
-    .hdr-nav {
-        display: none;
-    }
-    .hdr-nav.active {
-        display: block;
-        position: absolute;
-        top: 100px;
-        background-color: #515559;
-        margin: 0;
-        width: 100%;
-    }
-
-    .hdr-nav-link,
-    .hdr-nav-link.active {
-        display: block;
-        font-size: 19px;
-        margin: 0;
-        letter-spacing: 1px;
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 0 10px 30px;
-        border-bottom: 1px solid #fff;
-    }
-
-    .hdr-logo {
-        padding: 20px 0 0 20px;
-        width: 200px;
-    }
-
-    .section {
-        box-sizing: border-box;
-        padding: 33px 0;
-        padding: 9vw 0;
-    }
-    .section-contents {
-        margin: 0 auto;
-        width: 91%;
-        min-width: 0px;
-    }
-
-    .section-splash {
-        padding: 0;
-        height: 566px;
-        height: 87vh;
-    }
-
-    .section-splash .section-contents {
-    }
-    .section-splash-overlay {
-    }
-
-    .section-splash-hed {
-        font-size: 33px;
-        padding-top: 170px;
-        line-height: 1.6;
-        font-size: 8.8vw;
-        padding-top: 25.5vh;
-    }
-
-    .section-splash-continue {
-        width: 50px;
-        margin: 120px auto 0;
-        width: 13.3vw;
-        margin: 18vh auto 0;
-    }
-
-    .section-about {
-        box-sizing: border-box;
-        font-size: 17px;
-        letter-spacing: 0px;
-        line-height: 1.3;
-        text-align: left;
-        font-size: 4.5vw;
-        letter-spacing: 0vw;
-    }
-
-    .section-about-para {
-        margin: 5px 0 20px;
-        margin: 1.4vw 0 5.3vw;
-    }
-
-    .section-attorneys {
-    }
-
-
-    .section-attorneys-title {
-        font-weight: 600;
-        line-height: 1.5;
-        letter-spacing: 1.3px;
-        font-size: 16px;
-        font-size: 4.3vw;
-    }
-
-    .section-attorneys-title-hed {
-        height: 50px;
-        padding: 0;
-        height: 13.2vw;
-    }
-
-    .section-attorneys-img {
-        padding: 0;
-        width: 100%;
-        float: none;
-    }
-
-    .section-attorneys-title-dek {
-        padding: 7px 0;
-        padding: 1.9vw 0;
-    }
-
-    .section-attorneys-para {
-        text-align: left;
-        margin: 5px 0 20px;
-        margin: 1.4vw 0 5.3vw;
-        font-size: 17px;
-        letter-spacing: 0px;
-        line-height: 1.3;
-        text-align: left;
-        font-size: 4.5vw;
-        letter-spacing: 0vw;
-    }
-
-    .section-practice {
-        text-align: center;
-        padding: 1px 0;
-        font-size: 0;
-    }
-
-    .section-practice-group {
-        text-align: left;
-        display: block;
-        width: 100%;
-        padding: 21px;
-        margin: 27px auto;
-        box-sizing: border-box;
-        padding: 5.6vw;
-        margin: 7.2vw auto;
-        font-size: 17px;
-        font-size: 4.5vw;
-        letter-spacing: 0px;
-        line-height: 1.3;
-    }
-
-    .practice-hed {
-        padding-bottom: 25px;
-        padding-bottom: 6.7vw;
-    }
-
-    .practice-dek {
-        padding-bottom: 14px;
-        padding-bottom: 3.7vw;
-    }
-
-    .section-contact {
-    }
-
-    .section-contact form {
-        padding: 15px 19px;
-        padding: 4vw 5vw;
-    }
-
-    .section-contact-hed {
-        font-size: 17px;
-        font-size: 4.5vw;
-        padding: 0 0 22px 5px;
-        padding: 0 0 22px 1.3vw;
-    }
-
-    .section-contact div {}
-
-    .section-contact label {
-    }
-    .ie8 .section-contact label {
-    }
-
-    .section-contact input,
-    .section-contact textarea {
-        padding: 6px 7px 18px;
-        margin-bottom: 15px;
-        font-size: 17px;
-        font-size: 4.5vw;
-        padding: 1.6vw 1.8vw 4.8vw;
-        margin-bottom: 4vw;
-    }
-    .section-contact textarea {
-        min-height: 240px;
-        min-height: 63.9vw;
-    }
-
-    .section-contact .button {
-    }
-
-    .section-contact button {
-        font-size: 17px;
-        font-size: 4.5vw;
-        padding: 6px 66px 18px 6px;
-        padding: 1.6vw 17.6vw 4.7vw 1.6vw;
-    }
-
-    .form-messages {
-        font-size: 19px;
-        color: #005578;
-        position: absolute;
-        bottom: 4vw;
-        left: 30px;
-        width: 71vw;
-        font-size: 3.7vw;
-        width: 50%;
-    }
-
-    .section-blog {}
-
-    .section-blog-post {
-        padding: 10px 0 20px;
-    }
-
-    .section-blog-post-date {
-        font-size: 17px;
-        font-size: 4.5vw;
-        line-height: 2;
-    }
-
-    .section-blog-post-title {
-        font-size: 35px;
-        font-size: 9.34vw;
-        line-height: 1.2;
-        padding-bottom: 10px;
-    }
-
-    .section-blog-post-para {
-        text-align: left;
-        margin: 5px 0 20px;
-        margin: 1.4vw 0 5.3vw;
-        font-size: 17px;
-        font-size: 4.5vw;
-        letter-spacing: 0px;
-        line-height: 1.3;
-        text-align: left;
-    }
-    .ftr {
-        background-color: #515559;
-        padding: 20px 0 20px 20px;
-        min-width: 0;
-    }
-}
+/*span.dt-break {*/
+/*    display: none;*/
+/*}*/
+
+/*br.mb-break {*/
+/*    display: none;*/
+/*}*/
+
+/*body {*/
+/*    min-width: 1000px;*/
+/*}*/
+
+/*.hdr,*/
+/*.hdr-space {*/
+/*    width: 100%;*/
+/*    height: 133px;*/
+/*}*/
+
+/*a.anchor {*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    top: -133px;*/
+/*    visibility: hidden;*/
+/*}*/
+
+/*.hdr {*/
+/*    background-color: #C62A22;*/
+/*    color: #fff;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    z-index: 1;*/
+/*    min-width: 1000px;*/
+/*}*/
+/*.hdr-hb {*/
+/*    display: none;*/
+/*    float: right;*/
+/*}*/
+/*.hdr-nav {*/
+/*    display: inline-block;*/
+/*    margin: 85px 0 0;*/
+/*    float: right;*/
+/*}*/
+
+/*.hdr-nav-link {*/
+/*    display: inline-block;*/
+/*    font-size: 19px;*/
+/*    margin-right: 40px;*/
+/*    letter-spacing: 1px;*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.hdr-nav-link.active {*/
+/*    border-bottom: 3px solid #fff;*/
+/*}*/
+
+/*.hdr-logo {*/
+/*    padding: 30px 30px 0;*/
+/*    width: 286px;*/
+/*}*/
+
+
+/*.section {*/
+/*    box-sizing: border-box;*/
+/*    padding: 33px 0;*/
+/*}*/
+/*.section-contents {*/
+/*    margin: 0 auto;*/
+/*    width: 80%;*/
+/*    min-width: 1000px;*/
+/*}*/
+
+/*.section-splash {*/
+/*    background-image: url("../blankslate-child/img/splash.jpg");*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: 649px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.section-splash .section-contents {*/
+/*    width: 100%;*/
+/*}*/
+/*.section-splash-overlay {*/
+/*    background-color: #0b0a23;*/
+/*    opacity: 0.7;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+
+/*.section-splash-hed {*/
+/*    font-size: 65px;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    position: relative;*/
+/*    padding-top: 167px;*/
+/*    font-weight: 800;*/
+/*}*/
+
+/*.section-splash-continue {*/
+/*    width: 90px;*/
+/*    position: relative;*/
+/*    display: block;*/
+/*    margin: 110px auto 0;*/
+/*}*/
+
+/*.section-about {*/
+/*    color: #515559;*/
+/*    font-family: adobe-caslon-pro;*/
+/*    box-sizing: border-box;*/
+/*    padding: 43px 0;*/
+/*    font-size: 32px;*/
+/*    letter-spacing: 1.5px;*/
+/*    line-height: 2;*/
+/*    text-align: justify;*/
+/*}*/
+
+/*.section-about-para {*/
+/*    margin: 20px 0;*/
+/*}*/
+
+/*.section-attorneys {*/
+/*    background-color: #515559;*/
+/*    color: #fff;*/
+/*    box-sizing: border-box;*/
+/*    padding: 33px 0;*/
+/*}*/
+
+/*.section-attorneys-img {*/
+/*    float: left;*/
+/*    padding: 7px 22px 13px 0px;*/
+/*}*/
+
+/*.section-attorneys-title {*/
+/*    font-weight: 600;*/
+/*    line-height: 1.5;*/
+/*    letter-spacing: 1.3px;*/
+/*}*/
+
+/*.section-attorneys-title-hed {*/
+/*    height: 70px;*/
+/*    font-size: 19px;*/
+/*    padding-left: 238px;*/
+/*}*/
+
+/*.section-attorneys-title-dek {*/
+/*    padding: 0 0 20px;*/
+/*    font-size: 19px;*/
+/*}*/
+
+/*.section-attorneys-para {*/
+/*    text-align: justify;*/
+/*    font-family: adobe-caslon-pro;*/
+/*    line-height: 1.8;*/
+/*    letter-spacing: 1.2px;*/
+/*    font-size: 23px;*/
+/*    margin: 20px 0;*/
+/*}*/
+
+/*.section-practice {*/
+/*    background-image: url("../blankslate-child/img/nyc.jpg");*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    box-sizing: border-box;*/
+/*    padding: 33px 0;*/
+/*    text-align: justify;*/
+/*}*/
+
+/*.section-practice .section-contents:after {*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.section-practice-group {*/
+/*    display: inline-block;*/
+/*    vertical-align: top;*/
+/*    background-color: #fff;*/
+/*    width: 40%;*/
+/*    font-size: 19px;*/
+/*    padding: 21px;*/
+/*    line-height: 1.3;*/
+/*    font-weight: 700;*/
+/*    margin: 28px auto;*/
+/*}*/
+
+/*.practice-hed {*/
+/*    color: #C62A22;*/
+/*    padding-bottom: 25px;*/
+/*}*/
+
+/*.practice-dek > p {*/
+/*    color: #515559;*/
+/*    padding-bottom: 14px;*/
+/*    margin:0;*/
+/*}*/
+
+/*.section-contact {*/
+/*    background-color: #EBECEE;*/
+/*    padding: 60px 0;*/
+/*}*/
+
+/*.section-contact {*/
+/*}*/
+
+/*.section-contact form {*/
+/*    background-color: #B1B7BE;*/
+/*    color: #fff;*/
+/*    font-size: 0;*/
+/*    font-weight: 500;*/
+/*    padding: 15px 19px;*/
+/*    box-sizing: content-box;*/
+/*    position: relative;*/
+/*}*/
+
+/*.section-contact-hed {*/
+/*    font-size: 19px;*/
+/*    padding-left:22px;*/
+/*    padding-top:17px;*/
+/*    color:white;*/
+/*    background-color: #B1B7BE;*/
+/*}*/
+
+/*.section-contact div {}*/
+
+/*.section-contact label {*/
+/*    display: none;*/
+/*    font-size: 19px;*/
+/*}*/
+/*.ie8 .section-contact label {*/
+/*    display: block;*/
+/*}*/
+
+/*.section-contact input,*/
+/*.section-contact textarea,*/
+/*.formElement > input{*/
+/*    width: 100%;*/
+/*    border: none;*/
+/*    padding: 6px 7px 18px;*/
+/*    margin-bottom: 15px;*/
+/*    font-size: 19px;*/
+/*    box-sizing: border-box;*/
+/*    color: #515559;*/
+/*}*/
+/*.section-contact textarea {*/
+/*    resize: none;*/
+/*    min-height: 240px;*/
+/*}*/
+
+/*::-webkit-input-placeholder {*/
+/*   color: #939ba5;*/
+/*}*/
+/*:-moz-placeholder { /* Firefox 18- */
+/*   color: #939ba5;*/
+/*}*/
+/*::-moz-placeholder {  /* Firefox 19+ */
+/*   color: #939ba5;*/
+/*}*/
+/*:-ms-input-placeholder {*/
+/*   color: #939ba5;*/
+/*}*/
+
+/*.section-contact .button {*/
+/*    text-align: right;*/
+/*}*/
+
+/*.section-contact button {*/
+/*    background-color: #515559;*/
+/*    border: none;*/
+/*    color: #fff;*/
+/*    padding: 6px 66px 18px 6px;*/
+/*    font-size: 19px;*/
+/*}*/
+
+/*.form-messages {font-size: 19px;color: #005578;position: absolute;bottom: 35px;left: 30px;}*/
+
+/*.section-blog {}*/
+
+/*.section-blog-post {*/
+/*    padding: 10px 0 20px;*/
+/*    color: #515559;*/
+/*}*/
+
+/*.section-blog-post-date {*/
+/*    font-size: 19px;*/
+/*}*/
+
+/*a .section-blog-post-title, .section-blog-post-title {*/
+/*    font-family: adobe-caslon-pro;*/
+/*    font-size: 48px;*/
+/*    text-decoration: none;*/
+/*    color:#515559;*/
+/*}*/
+
+/*.section-blog-post-para  > p{*/
+/*    font-family: adobe-caslon-pro;*/
+/*    font-size: 23px;*/
+/*    margin: 0 0 20px;*/
+/*}*/
+/*.ftr {*/
+/*    background-color: #515559;*/
+/*    color: #fff;*/
+/*    padding: 20px 10%;*/
+/*    margin: 0 auto;*/
+/*    width: 100%;*/
+/*    min-width: 1000px;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*@media only screen and (max-width: 1050px) {*/
+/*    span.dt-break {*/
+/*        display: inline;*/
+/*    }*/
+/*    br.dt-break {*/
+/*        display: none;*/
+/*    }*/
+/*    span.mb-break {*/
+/*        display: none;*/
+/*    }*/
+/*    br.mb-break {*/
+/*        display: inline;*/
+/*    }*/
+/*    body {*/
+/*        min-width: 0;*/
+/*    }*/
+
+/*    .hdr,*/
+/*    .hdr-space {*/
+/*        height: 100px;*/
+/*    }*/
+/*    a.anchor {*/
+/*        top: -100px;*/
+/*    }*/
+
+/*    .hdr {*/
+/*        min-width: 0px;*/
+/*    }*/
+
+/*    .hdr-hb {*/
+/*        display: inline-block;*/
+/*        width: 40px;*/
+/*        padding: 41px 30px 0px;*/
+/*    }*/
+/*    .hdr-nav {*/
+/*        display: none;*/
+/*    }*/
+/*    .hdr-nav.active {*/
+/*        display: block;*/
+/*        position: absolute;*/
+/*        top: 100px;*/
+/*        background-color: #515559;*/
+/*        margin: 0;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .hdr-nav-link,*/
+/*    .hdr-nav-link.active {*/
+/*        display: block;*/
+/*        font-size: 19px;*/
+/*        margin: 0;*/
+/*        letter-spacing: 1px;*/
+/*        color: #fff;*/
+/*        text-decoration: none;*/
+/*        padding: 10px 0 10px 30px;*/
+/*        border-bottom: 1px solid #fff;*/
+/*    }*/
+
+/*    .hdr-logo {*/
+/*        padding: 20px 0 0 20px;*/
+/*        width: 200px;*/
+/*    }*/
+
+/*    .section {*/
+/*        box-sizing: border-box;*/
+/*        padding: 33px 0;*/
+/*        padding: 9vw 0;*/
+/*    }*/
+/*    .section-contents {*/
+/*        margin: 0 auto;*/
+/*        width: 91%;*/
+/*        min-width: 0px;*/
+/*    }*/
+
+/*    .section-splash {*/
+/*        padding: 0;*/
+/*        height: 566px;*/
+/*        height: 87vh;*/
+/*    }*/
+
+/*    .section-splash .section-contents {*/
+/*    }*/
+/*    .section-splash-overlay {*/
+/*    }*/
+
+/*    .section-splash-hed {*/
+/*        font-size: 33px;*/
+/*        padding-top: 170px;*/
+/*        line-height: 1.6;*/
+/*        font-size: 8.8vw;*/
+/*        padding-top: 25.5vh;*/
+/*    }*/
+
+/*    .section-splash-continue {*/
+/*        width: 50px;*/
+/*        margin: 120px auto 0;*/
+/*        width: 13.3vw;*/
+/*        margin: 18vh auto 0;*/
+/*    }*/
+
+/*    .section-about {*/
+/*        box-sizing: border-box;*/
+/*        font-size: 17px;*/
+/*        letter-spacing: 0px;*/
+/*        line-height: 1.3;*/
+/*        text-align: left;*/
+/*        font-size: 4.5vw;*/
+/*        letter-spacing: 0vw;*/
+/*    }*/
+
+/*    .section-about-para {*/
+/*        margin: 5px 0 20px;*/
+/*        margin: 1.4vw 0 5.3vw;*/
+/*    }*/
+
+/*    .section-attorneys {*/
+/*    }*/
+
+
+/*    .section-attorneys-title {*/
+/*        font-weight: 600;*/
+/*        line-height: 1.5;*/
+/*        letter-spacing: 1.3px;*/
+/*        font-size: 16px;*/
+/*        font-size: 4.3vw;*/
+/*    }*/
+
+/*    .section-attorneys-title-hed {*/
+/*        height: 50px;*/
+/*        padding: 0;*/
+/*        height: 13.2vw;*/
+/*    }*/
+
+/*    .section-attorneys-img {*/
+/*        padding: 0;*/
+/*        width: 100%;*/
+/*        float: none;*/
+/*    }*/
+
+/*    .section-attorneys-title-dek {*/
+/*        padding: 7px 0;*/
+/*        padding: 1.9vw 0;*/
+/*    }*/
+
+/*    .section-attorneys-para {*/
+/*        text-align: left;*/
+/*        margin: 5px 0 20px;*/
+/*        margin: 1.4vw 0 5.3vw;*/
+/*        font-size: 17px;*/
+/*        letter-spacing: 0px;*/
+/*        line-height: 1.3;*/
+/*        text-align: left;*/
+/*        font-size: 4.5vw;*/
+/*        letter-spacing: 0vw;*/
+/*    }*/
+
+/*    .section-practice {*/
+/*        text-align: center;*/
+/*        padding: 1px 0;*/
+/*        font-size: 0;*/
+/*    }*/
+
+/*    .section-practice-group {*/
+/*        text-align: left;*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*        padding: 21px;*/
+/*        margin: 27px auto;*/
+/*        box-sizing: border-box;*/
+/*        padding: 5.6vw;*/
+/*        margin: 7.2vw auto;*/
+/*        font-size: 17px;*/
+/*        font-size: 4.5vw;*/
+/*        letter-spacing: 0px;*/
+/*        line-height: 1.3;*/
+/*    }*/
+
+/*    .practice-hed {*/
+/*        padding-bottom: 25px;*/
+/*        padding-bottom: 6.7vw;*/
+/*    }*/
+
+/*    .practice-dek {*/
+/*        padding-bottom: 14px;*/
+/*        padding-bottom: 3.7vw;*/
+/*    }*/
+
+/*    .section-contact {*/
+/*    }*/
+
+/*    .section-contact form {*/
+/*        padding: 15px 19px;*/
+/*        padding: 4vw 5vw;*/
+/*    }*/
+
+/*    .section-contact-hed {*/
+/*        font-size: 17px;*/
+/*        font-size: 4.5vw;*/
+/*        padding: 0 0 22px 5px;*/
+/*        padding: 0 0 22px 1.3vw;*/
+/*    }*/
+
+/*    .section-contact div {}*/
+
+/*    .section-contact label {*/
+/*    }*/
+/*    .ie8 .section-contact label {*/
+/*    }*/
+
+/*    .section-contact input,*/
+/*    .section-contact textarea {*/
+/*        padding: 6px 7px 18px;*/
+/*        margin-bottom: 15px;*/
+/*        font-size: 17px;*/
+/*        font-size: 4.5vw;*/
+/*        padding: 1.6vw 1.8vw 4.8vw;*/
+/*        margin-bottom: 4vw;*/
+/*    }*/
+/*    .section-contact textarea {*/
+/*        min-height: 240px;*/
+/*        min-height: 63.9vw;*/
+/*    }*/
+
+/*    .section-contact .button {*/
+/*    }*/
+
+/*    .section-contact button {*/
+/*        font-size: 17px;*/
+/*        font-size: 4.5vw;*/
+/*        padding: 6px 66px 18px 6px;*/
+/*        padding: 1.6vw 17.6vw 4.7vw 1.6vw;*/
+/*    }*/
+
+/*    .form-messages {*/
+/*        font-size: 19px;*/
+/*        color: #005578;*/
+/*        position: absolute;*/
+/*        bottom: 4vw;*/
+/*        left: 30px;*/
+/*        width: 71vw;*/
+/*        font-size: 3.7vw;*/
+/*        width: 50%;*/
+/*    }*/
+
+/*    .section-blog {}*/
+
+/*    .section-blog-post {*/
+/*        padding: 10px 0 20px;*/
+/*    }*/
+
+/*    .section-blog-post-date {*/
+/*        font-size: 17px;*/
+/*        font-size: 4.5vw;*/
+/*        line-height: 2;*/
+/*    }*/
+
+/*    .section-blog-post-title {*/
+/*        font-size: 35px;*/
+/*        font-size: 9.34vw;*/
+/*        line-height: 1.2;*/
+/*        padding-bottom: 10px;*/
+/*    }*/
+
+/*    .section-blog-post-para {*/
+/*        text-align: left;*/
+/*        margin: 5px 0 20px;*/
+/*        margin: 1.4vw 0 5.3vw;*/
+/*        font-size: 17px;*/
+/*        font-size: 4.5vw;*/
+/*        letter-spacing: 0px;*/
+/*        line-height: 1.3;*/
+/*        text-align: left;*/
+/*    }*/
+/*    .ftr {*/
+/*        background-color: #515559;*/
+/*        padding: 20px 0 20px 20px;*/
+/*        min-width: 0;*/
+/*    }*/
+/*}*/
 
 
 
@@ -858,10 +858,10 @@ a .section-blog-post-title, .section-blog-post-title {
 /*::-webkit-input-placeholder {*/
 /*   color: #939ba5;*/
 /*}*/
-:-moz-placeholder { /* Firefox 18- */
+/*:-moz-placeholder { /* Firefox 18- */
 /*   color: #939ba5;*/
 /*}*/
-::-moz-placeholder {  /* Firefox 19+ */
+/*::-moz-placeholder {  /* Firefox 19+ */
 /*   color: #939ba5;*/
 /*}*/
 /*:-ms-input-placeholder {*/

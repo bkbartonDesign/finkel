@@ -22,6 +22,7 @@
         <a href="<?php echo $url; ?>#attorneys" class="hdr-nav-link">Attorneys</a>
         <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Areas of Practice</a>
         <a href="<?php echo $url; ?>#contact" class="hdr-nav-link">Contact</a>
+        
         <a href="<?php esc_url(home_url('/')); ?>/sample-page/home/" class="hdr-nav-link">Blog</a>
       </div>
       <img class="hdr-hb" src="<?php echo finkelImage("hb.png") ?>">

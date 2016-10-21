@@ -17,10 +17,9 @@
     add_action('wp_enqueue_scripts', 'custom_style_sheet');
     
     function mq_css() {
-        wp_enqueue_style( 'media_queries', get_theme_root_uri() . '/blankslate-child/mq.css' );
+        wp_enqueue_style( 'finkel-styles', get_theme_root_uri() . '/blankslate-child/finkelStyle.css' );
     }
     add_action('wp_enqueue_scripts', 'mq_css');
-
 
     function finkelImage($imgName){
         if($imgName != ""){
