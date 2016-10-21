@@ -16,6 +16,12 @@
     }
     add_action('wp_enqueue_scripts', 'custom_style_sheet');
     
+    function mq_css() {
+        wp_enqueue_style( 'media_queries', get_theme_root_uri() . '/blankslate-child/mq.css' );
+    }
+    add_action('wp_enqueue_scripts', 'mq_css');
+
+
     function finkelImage($imgName){
         if($imgName != ""){
             $path = get_template_directory_uri()."-child/img/";

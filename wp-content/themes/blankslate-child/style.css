@@ -180,7 +180,6 @@ a.anchor {
 
 .section-practice {
     background-image: url("../blankslate-child/img/nyc.jpg");
-    /*background-image: url("../images/nyc.jpg");*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,8 +253,8 @@ a.anchor {
     display: block;
 }
 
-/*.section-contact input,*/
-/*.section-contact textarea,*/
+.section-contact input,
+.section-contact textarea,
 .formElement > input{
     width: 100%;
     border: none;
@@ -609,6 +608,7 @@ a .section-blog-post-title, .section-blog-post-title {
         min-width: 0;
     }
 }
+
 
 
 /*span.dt-break {*/
