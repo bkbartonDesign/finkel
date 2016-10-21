@@ -14,7 +14,8 @@
             if ( has_post_thumbnail() ) {
                 the_post_thumbnail( 'full', array( 'class' => 'section-blog-post-img' ) );
             } 
-            the_content();
         ?>
+        <div class="section-blog-post-para"><?php the_content(); ?></div>
+        
     </section>    
 </article>
