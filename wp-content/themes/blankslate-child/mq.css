@@ -84,20 +84,26 @@
     .section-splash-overlay {
     }
 
-    .section-splash-hed {
-        font-size: 33px;
-        padding-top: 170px;
-        line-height: 1.6;
-        font-size: 8.8vw;
-        padding-top: 25.5vh;
-    }
 
-    .section-splash-continue {
-        width: 50px;
-        margin: 120px auto 0;
-        width: 13.3vw;
-        margin: 18vh auto 0;
-    }
+    .section-splash-hed {
+    line-height: 1.6;
+    font-size: 33px;
+    font-size: 4.95vh;
+    padding-top: 170px;
+    padding-top: 25.5vh;
+    margin: 0 10px;
+    margin: 0 1.8vw;
+}
+
+.section-splash-continue {
+    width: 50px;
+    width: 7.5vh;
+    margin: 120px auto 0;
+    margin: 18vh auto 0;
+}
+
+
+
 
     .section-about {
         box-sizing: border-box;
