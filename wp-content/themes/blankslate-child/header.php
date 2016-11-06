@@ -14,8 +14,10 @@
       <div class="hdr-nav">
         <?php 
           $url = "";
+          $is_blog = false;
           if(!is_front_page()) {
             $url = esc_url( home_url( '/' ) );
+            $is_blog = true;
           }
         ?>
         <a href="<?php echo $url; ?>#about" class="hdr-nav-link">About</a>
@@ -23,7 +25,7 @@
         <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Areas of Practice</a>
         <a href="<?php echo $url; ?>#contact" class="hdr-nav-link">Contact</a>
         
-        <a href="<?php esc_url(home_url('/')); ?>/sample-page/home/" class="hdr-nav-link">Blog</a>
+        <a href="<?php esc_url(home_url('/')); ?>/sample-page/home/" class="<?php if($is_blog){ echo 'active'; }?> hdr-nav-link">Blog</a>
       </div>
       <img class="hdr-hb" src="<?php echo finkelImage("hb.png") ?>">
     </div>    
