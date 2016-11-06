@@ -8,18 +8,21 @@
 <?php wp_head(); ?>
 </head>
 <body>
+    <?php 
+      $url = "";
+      $is_blog = false;
+      if(!is_front_page()) {
+        $url = esc_url( home_url( '/' ) );
+        $is_blog = true;
+      }
+    ?>
     <div class="hdr-space"></div>
     <div class="hdr">
-      <img class="hdr-logo" src="<?php echo finkelImage("logo.png"); ?>">  
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <img class="hdr-logo" src="<?php echo finkelImage("logo.png"); ?>" alt="Finkel Associates LLC">  
+      </a> 
       <div class="hdr-nav">
-        <?php 
-          $url = "";
-          $is_blog = false;
-          if(!is_front_page()) {
-            $url = esc_url( home_url( '/' ) );
-            $is_blog = true;
-          }
-        ?>
+
         <a href="<?php echo $url; ?>#about" class="hdr-nav-link">About</a>
         <a href="<?php echo $url; ?>#attorneys" class="hdr-nav-link">Attorneys</a>
         <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Areas of Practice</a>

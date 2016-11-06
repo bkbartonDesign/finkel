@@ -18,6 +18,10 @@ body {
     height: 133px;
 }
 
+a {
+    cursor: pointer;
+}
+
 a.anchor {
     display: block;
     position: relative;
