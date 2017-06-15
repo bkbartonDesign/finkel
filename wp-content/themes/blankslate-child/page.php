@@ -28,29 +28,6 @@ get_header(); ?>
       </div>
     </div>
     
-    <div id="attorneys" class="section section-attorneys">
-      <div class="section-contents">
-        <div class="section-attorneys-title section-attorneys-title-hed">Attorneys</div>
-        <?php 
-
-            $image = get_field("attorney_image");
-            
-            if( !empty($image) ): ?>
-                
-            <img class="section-attorneys-img" src="<?php echo $image["url"]; ?>" alt="<?php echo $image["alt"]; ?>" />
-                
-                
-        <?php endif; ?>
-        
-        <div class="section-attorneys-title section-attorneys-title-dek">
-          <?php echo get_field("attorney_name"); ?>
-        </div>
-        <div class="section-attorneys-para">
-          <?php echo get_field("attorney_bio"); ?>
-        </div>
-      </div>
-    </div>
-  
     <div id="practice" class="section section-practice">
         <div class="section-contents">
           <?php if(get_field("areas_of_expertise")):?>
@@ -77,8 +54,42 @@ get_header(); ?>
           
         </div>
     </div>
+    
+    <div id="professionals" class="section section-attorneys">
+      <div class="section-contents">
+        <div class="section-attorneys-title section-attorneys-title-hed">Attorneys</div>
+        <?php 
 
-   
+            $image = get_field("attorney_image");
+            
+            if( !empty($image) ): ?>
+                
+            <img class="section-attorneys-img" src="<?php echo $image["url"]; ?>" alt="<?php echo $image["alt"]; ?>" />
+                
+                
+        <?php endif; ?>
+        
+        <div class="section-attorneys-title section-attorneys-title-dek">
+          <?php echo get_field("attorney_name"); ?>
+        </div>
+        <div class="section-attorneys-para">
+          <?php echo get_field("attorney_bio"); ?>
+        </div>
+      </div>
+    </div>
+
+    <div id="clients" class="section section-clients">
+      <div class="section-contents">
+        <div class="section-contact-hed">Clients &amp; Industries</div>
+      </div>
+    </div>
+
+   <div id="representativeMatters" class="section section-rep">
+      <div class="section-contents">
+        <div class="section-contact-hed">Representative Matters</div>
+      </div>
+    </div>
+
     <div id="contact" class="section section-contact">
         <div class="section-contents">
             <div class="section-contact-hed">Contact</div>

@@ -25,12 +25,11 @@
         
         <a href="<?php echo $url; ?>#about" class="hdr-nav-link">About the Firm</a>
         <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Practice Areas</a>
-        <a href="<?php echo $url; ?>#attorneys" class="hdr-nav-link">Professionals</a>
-        <a href="<?php echo $url; ?>#about" class="hdr-nav-link">Clients &amp; Industries</a>
-        <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Representative Matters</a>
+        <a href="<?php echo $url; ?>#professionals" class="hdr-nav-link">Professionals</a>
+        <a href="<?php echo $url; ?>#clients" class="hdr-nav-link">Clients &amp; Industries</a>
+        <a href="<?php echo $url; ?>#representativeMatters" class="hdr-nav-link">Representative Matters</a>
         <a href="<?php echo $url; ?>#contact" class="hdr-nav-link">Contact</a>
-        
-        <a href="<?php esc_url(home_url('/')); ?>/sample-page/home/" class="<?php if($is_blog){ echo 'active'; }?> hdr-nav-link">Blog</a>
+
       </div>
       <img class="hdr-hb" src="<?php echo finkelImage("hb.png") ?>">
     </div>    
