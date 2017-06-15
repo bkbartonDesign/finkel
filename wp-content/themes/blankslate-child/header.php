@@ -19,13 +19,15 @@
     <div class="hdr-space"></div>
     <div class="hdr">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <img class="hdr-logo" src="<?php echo finkelImage("logo.png"); ?>" alt="Finkel Associates LLC">  
-      </a> 
+        <img class="hdr-logo" src="<?php echo finkelImage("finkelLogo.png"); ?>" alt="Finkel Associates LLC">  
+      </a>
       <div class="hdr-nav">
-
-        <a href="<?php echo $url; ?>#about" class="hdr-nav-link">About</a>
-        <a href="<?php echo $url; ?>#attorneys" class="hdr-nav-link">Attorneys</a>
-        <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Areas of Practice</a>
+        
+        <a href="<?php echo $url; ?>#about" class="hdr-nav-link">About the Firm</a>
+        <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Practice Areas</a>
+        <a href="<?php echo $url; ?>#attorneys" class="hdr-nav-link">Professionals</a>
+        <a href="<?php echo $url; ?>#about" class="hdr-nav-link">Clients &amp; Industries</a>
+        <a href="<?php echo $url; ?>#practice" class="hdr-nav-link">Representative Matters</a>
         <a href="<?php echo $url; ?>#contact" class="hdr-nav-link">Contact</a>
         
         <a href="<?php esc_url(home_url('/')); ?>/sample-page/home/" class="<?php if($is_blog){ echo 'active'; }?> hdr-nav-link">Blog</a>
