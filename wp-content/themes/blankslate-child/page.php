@@ -30,28 +30,7 @@ get_header(); ?>
     
     <div id="practice" class="section section-practice">
         <div class="section-contents">
-          <?php if(get_field("areas_of_expertise")):?>
-            <?php
-              $field_name = "areas_of_expertise";
-              $field = get_field_object($field_name);
-            ?>
-            <div class="section-practice-group">
-                <div class="practice-hed"><?php echo $field['label']; ?></div>
-                <div class="practice-dek"><?php echo get_field("areas_of_expertise"); ?></div>
-            </div>
-          <?php endif ?>
-          
-          <?php if(get_field("industries")):?>
-            <?php
-              $field_name = "industries";
-              $field = get_field_object($field_name);
-            ?>
-            <div class="section-practice-group">
-                <div class="practice-hed"><?php echo $field['label']; ?></div>
-                <div class="practice-dek"><?php echo get_field("industries"); ?></div>
-            </div>
-          <?php endif ?>
-          
+          <?php include("p.php") ?>
         </div>
     </div>
     
@@ -80,7 +59,27 @@ get_header(); ?>
 
     <div id="clients" class="section section-clients">
       <div class="section-contents">
-        <div class="section-contact-hed">Clients &amp; Industries</div>
+          <?php if(get_field("areas_of_expertise")):?>
+            <?php
+              $field_name = "areas_of_expertise";
+              $field = get_field_object($field_name);
+            ?>
+            <div class="section-clients-group">
+                <div class="clients-hed"><?php echo $field['label']; ?></div>
+                <div class="clients-dek"><?php echo get_field("areas_of_expertise"); ?></div>
+            </div>
+          <?php endif ?>
+          
+          <?php if(get_field("industries")):?>
+            <?php
+              $field_name = "industries";
+              $field = get_field_object($field_name);
+            ?>
+            <div class="section-clients-group">
+                <div class="clients-hed"><?php echo $field['label']; ?></div>
+                <div class="clients-dek"><?php echo get_field("industries"); ?></div>
+            </div>
+          <?php endif ?>
       </div>
     </div>
 

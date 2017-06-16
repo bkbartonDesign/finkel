@@ -172,7 +172,7 @@ a.anchor {
     margin: 20px 0;
 }
 
-.section-practice {
+.section-clients {
     background-image: url("../blankslate-child/img/nyc.jpg");
     background-position: center;
     background-size: cover;
@@ -182,13 +182,13 @@ a.anchor {
     text-align: justify;
 }
 
-.section-practice .section-contents:after {
+.section-clients .section-contents:after {
     content: '';
     display: inline-block;
     width: 100%;
 }
 
-.section-practice-group {
+.section-clients-group {
     display: inline-block;
     vertical-align: top;
     background-color: #fff;
@@ -200,12 +200,12 @@ a.anchor {
     margin: 28px auto;
 }
 
-.practice-hed {
+.clients-hed {
     color: #C62A22;
     padding-bottom: 25px;
 }
 
-.practice-dek > p {
+.clients-dek > p {
     color: #515559;
     padding-bottom: 14px;
     margin:0;
@@ -488,13 +488,13 @@ a .section-blog-post-title, .section-blog-post-title {
         letter-spacing: 0vw;
     }
 
-    .section-practice {
+    .section-clients {
         text-align: center;
         padding: 1px 0;
         font-size: 0;
     }
 
-    .section-practice-group {
+    .section-clients-group {
         text-align: left;
         display: block;
         width: 100%;
