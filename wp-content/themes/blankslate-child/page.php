@@ -43,8 +43,6 @@ get_header(); ?>
               <div class="pa-title">
                 <span class="pa-list-control">
                   <img class="chevron" src="<?php echo finkelImage("chevron.png"); ?>">
-                  <!--<span class="icon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>-->
-                  <!--<span class="icon hidden"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>-->
                 </span>
                 <span class="pa-title-text">
                   <span class="pa-hed-type"><?php echo $title ?></span> 
@@ -79,8 +77,8 @@ get_header(); ?>
                 
                 <?php endif; ?>
         
-                <div class="section-attorneys-title section-attorneys-title-dek">
-                  <p> <?php echo $name;  ?> </p>
+                <div class="section-attorneys-title">
+                  <p> <?php echo $name;  ?></p>
                   <?php if(!empty($tag)) :?>
                     <p> <?php echo $tag;  ?> </p>
                   <?php endif; ?>

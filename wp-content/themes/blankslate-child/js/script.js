@@ -63,7 +63,7 @@ $(function() {
     var paList = $(this).children('.pa-list'),
         paListTxt = $(this).find('.pa-list-text');
     
-    paList.fadeToggle(300, function(){
+    paList.slideToggle(300,'swing', function(){
       paListTxt.fadeToggle(200);
     });
     

@@ -193,17 +193,20 @@ a.anchor {
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 1.3px;
+    font-size:24px;
+    
+}
+
+.section-attorneys-title > p{
+    margin:0;
+    margin-bottom:12px;
 }
 
 .section-attorneys-title-hed {
     height: 70px;
-    font-size: 19px;
+    font-size: 24px;
+    /*font-size: 19px;*/
     padding-left: 238px;
-}
-
-.section-attorneys-title-dek {
-    padding: 0 0 20px;
-    font-size: 19px;
 }
 
 .section-attorneys-para {
@@ -211,7 +214,7 @@ a.anchor {
     font-family: adobe-caslon-pro;
     line-height: 1.8;
     letter-spacing: 1.2px;
-    font-size: 23px;
+    font-size: 24px;
     margin: 20px 0;
 }
 
@@ -427,10 +430,6 @@ input:focus, textarea:focus {
 .pa-title-text{ 
     padding-right:33px;
     padding-top:18px;
-    /*margin-left:20px; */
-    /*line-height:24px;*/
-    /*padding-bottom:18px;*/
-    
 }
 
 .pa-hed-type{
@@ -451,10 +450,25 @@ input:focus, textarea:focus {
     margin:0px;
 }
 
+.pa-list-control{
+    opacity:.6;
+    -webkit-transition:opacity 1s;
+    transition: opacity 1s;
+}
+.pa-list-control:hover{
+    opacity:1.0;
+    -webkit-transition:opacity 1s;
+    transition: opacity 1s;
+}
+
 .chevron{
     max-width:20px;
+ 
 }
+
 .flip{
     transform: rotate(180deg);
 }
+
+
 .section-contact a{ border-bottom:1px solid #515559; padding-bottom:1px;}
