@@ -1,5 +1,21 @@
+@media only screen and (max-width:1231px){
+   
+    .hdr {
+        min-width: 0px;
+        height:100px;
+    }
+    .hdr-logo {
+        padding: 20px 0 0 20px;
+        width: 200px;
+    }
+    .hdr-nav{
+        margin:52px 20px 0 0;
+    }
 
-@media only screen and (max-width: 1050px) {
+}
+
+
+@media only screen and (max-width: 1100px) {
     span.dt-break {
         display: inline;
     }
@@ -24,9 +40,9 @@
         top: -100px;
     }
 
-    .hdr {
-        min-width: 0px;
-    }
+    /*.hdr {*/
+    /*    min-width: 0px;*/
+    /*}*/
 
     .hdr-hb {
         display: inline-block;
@@ -57,10 +73,10 @@
         border-bottom: 1px solid #fff;
     }
 
-    .hdr-logo {
-        padding: 20px 0 0 20px;
-        width: 200px;
-    }
+    /*.hdr-logo {*/
+    /*    padding: 20px 0 0 20px;*/
+    /*    width: 200px;*/
+    /*}*/
 
     .section {
         box-sizing: border-box;

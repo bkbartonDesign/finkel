@@ -60,10 +60,16 @@ $(function() {
   }
   
   $('.pa').on('click',function(){
-    var icons = $(this).find(".pa-list-control").find('.icon');
-    $(icons).each( function(i,ele){ $(ele).toggleClass('hidden') } );
-    $(this).children('.pa-list').toggleClass('hidden');
+    var paList = $(this).children('.pa-list'),
+        paListTxt = $(this).find('.pa-list-text');
     
+    paList.fadeToggle(300, function(){
+      paListTxt.fadeToggle(200);
+    });
+    
+    $(paList, paListTxt).toggleClass('hidden');
+    
+    $(this).find('.chevron').toggleClass('flip');
   });
   
 });

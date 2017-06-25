@@ -42,8 +42,9 @@ get_header(); ?>
             <div class="pa pa-bus-law bg-w">
               <div class="pa-title">
                 <span class="pa-list-control">
-                  <span class="icon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
-                  <span class="icon hidden"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                  <img class="chevron" src="<?php echo finkelImage("chevron.png"); ?>">
+                  <!--<span class="icon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>-->
+                  <!--<span class="icon hidden"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>-->
                 </span>
                 <span class="pa-title-text">
                   <span class="pa-hed-type"><?php echo $title ?></span> 
@@ -51,7 +52,9 @@ get_header(); ?>
                 </span>  
               </div>
               <div class="pa-list hidden serif">
-                <?php echo $list ?>
+                <div class="pa-list-text hidden">
+                  <?php echo $list ?>
+                </div>
               </div>
             </div>
               <?php endwhile; ?>
