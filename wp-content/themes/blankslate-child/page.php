@@ -61,7 +61,7 @@ get_header(); ?>
     
     <div id="professionals" class="section section-attorneys">
       <div class="section-contents">
-        <div class="section-attorneys-title section-attorneys-title-hed">Attorneys</div>
+        <div class="section-title">Attorneys</div>
         <?php 
             if( have_rows('professionals') ): 
               while( have_rows('professionals') ): the_row(); 
@@ -131,8 +131,8 @@ get_header(); ?>
           Finkel Associates LLC</br>
           68 3rd Street, Suite 122</br>
           Brooklyn, NY 11231</br>
-          <a href="tel:1-718-840-7446">1(718) 840‐7446</a></br>
-          <a href="mailto:Inquire@finkelassociates.com">inquire@finkelassociates.com</a> 
+          <a href="tel:1-718-840-7446" class="t-dg">1(718) 840‐7446</a></br>
+          <a href="mailto:Inquire@finkelassociates.com" class="t-dg">inquire@finkelassociates.com</a> 
       </div>
     </div>
     
