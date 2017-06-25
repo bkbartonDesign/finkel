@@ -28,9 +28,34 @@ get_header(); ?>
       </div>
     </div>
     
-    <div id="practice" class="section section-practice">
+    <div id="practice" class="section section-practice bg-lg">
         <div class="section-contents">
-          <?php include("p.php") ?>
+          <div class="section-title t-dg">Practice Areas</div>
+          <?php 
+            if( have_rows('practice_area') ): 
+              while( have_rows('practice_area') ): the_row(); 
+                $title = get_sub_field('area_title');
+                $tag = get_sub_field('area_tagline');
+                $list = get_sub_field('area_list');
+          ?>
+            
+            <div class="pa pa-bus-law bg-w">
+              <div class="pa-title">
+                <span class="pa-list-control">
+                  <span class="icon"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                  <span class="icon hidden"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                </span>
+                <span class="pa-title-text">
+                  <span class="pa-hed-type"><?php echo $title ?></span> 
+                  <span class="pa-tag serif"><?php echo $tag ?></span>
+                </span>  
+              </div>
+              <div class="pa-list hidden serif">
+                <?php echo $list ?>
+              </div>
+            </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
         </div>
     </div>
     
@@ -38,62 +63,77 @@ get_header(); ?>
       <div class="section-contents">
         <div class="section-attorneys-title section-attorneys-title-hed">Attorneys</div>
         <?php 
+            if( have_rows('professionals') ): 
+              while( have_rows('professionals') ): the_row(); 
+                $name = get_sub_field('attorney_name');
+                $tag = get_sub_field('attorney_tag');
+                $image = get_sub_field('attorney_image');
+                $bio = get_sub_field('attorney_bio');
 
-            $image = get_field("attorney_image");
-            
-            if( !empty($image) ): ?>
+                if( !empty($image) ): ?>
                 
-            <img class="section-attorneys-img" src="<?php echo $image["url"]; ?>" alt="<?php echo $image["alt"]; ?>" />
+                  <img class="section-attorneys-img" src="<?php echo $image; ?>" alt="" />
                 
-                
-        <?php endif; ?>
+                <?php endif; ?>
         
-        <div class="section-attorneys-title section-attorneys-title-dek">
-          <?php echo get_field("attorney_name"); ?>
-        </div>
-        <div class="section-attorneys-para">
-          <?php echo get_field("attorney_bio"); ?>
-        </div>
+                <div class="section-attorneys-title section-attorneys-title-dek">
+                  <p> <?php echo $name;  ?> </p>
+                  <?php if(!empty($tag)) :?>
+                    <p> <?php echo $tag;  ?> </p>
+                  <?php endif; ?>
+                </div>
+                <div class="section-attorneys-para">
+                  <?php echo $bio; ?>
+                </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
       </div>
     </div>
 
     <div id="clients" class="section section-clients">
       <div class="section-contents">
-          <?php if(get_field("areas_of_expertise")):?>
-            <?php
-              $field_name = "areas_of_expertise";
-              $field = get_field_object($field_name);
-            ?>
-            <div class="section-clients-group">
-                <div class="clients-hed"><?php echo $field['label']; ?></div>
-                <div class="clients-dek"><?php echo get_field("areas_of_expertise"); ?></div>
-            </div>
-          <?php endif ?>
-          
-          <?php if(get_field("industries")):?>
-            <?php
-              $field_name = "industries";
-              $field = get_field_object($field_name);
-            ?>
-            <div class="section-clients-group">
-                <div class="clients-hed"><?php echo $field['label']; ?></div>
-                <div class="clients-dek"><?php echo get_field("industries"); ?></div>
-            </div>
-          <?php endif ?>
+        <?php 
+            if( have_rows('clients') ): 
+              while( have_rows('clients') ): the_row(); 
+                $title = get_sub_field('section_title');
+                $list = get_sub_field('section_list');
+        ?>
+        <div class="section-clients-group">
+          <div class="clients-hed"><?php echo $title; ?></div>
+          <div class="clients-dek"><?php echo $list; ?></div>
+        </div>      
+                
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     </div>
 
    <div id="representativeMatters" class="section section-rep">
       <div class="section-contents">
-        <div class="section-contact-hed">Representative Matters</div>
+        <div class="section-title">Representative Matters</div>
+        <?php 
+            if( have_rows('representative_matters') ): 
+              while( have_rows('representative_matters') ): the_row(); 
+                $title = get_sub_field('section_title');
+                $list = get_sub_field('section_list');
+        ?>
+        <div class="list-title"> <?php echo $title; ?> </div>
+        <div class="list serif"> <?php echo $list; ?> </div>
+              <?php endwhile; ?>
+            <?php endif; ?>  
+          
       </div>
     </div>
-
-    <div id="contact" class="section section-contact">
-        <div class="section-contents">
-            <div class="section-contact-hed">Contact</div>
-            <?php echo do_shortcode("[wpforms id='120']"); ?>
-        </div>
+    
+   <div id="contact" class="section section-contact">
+      <div class="section-contents">
+        <div class="section-title">Contact</div>
+          Finkel Associates LLC</br>
+          68 3rd Street, Suite 122</br>
+          Brooklyn, NY 11231</br>
+          <a href="tel:1-718-840-7446">1(718) 840‐7446</a></br>
+          <a href="mailto:Inquire@finkelassociates.com">inquire@finkelassociates.com</a> 
+      </div>
     </div>
     
   

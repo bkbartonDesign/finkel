@@ -16,10 +16,21 @@
     }
     add_action('wp_enqueue_scripts', 'custom_style_sheet');
     
-    function mq_css() {
+    function finkle_css() {
         wp_enqueue_style( 'finkel-styles', get_theme_root_uri() . '/blankslate-child/finkelStyle.css' );
     }
+    add_action('wp_enqueue_scripts', 'finkle_css');
+    
+    function mq_css() {
+        wp_enqueue_style( 'mq', get_theme_root_uri() . '/blankslate-child/mq.css' );
+    }
     add_action('wp_enqueue_scripts', 'mq_css');
+    
+    
+    function font_awesome(){
+        wp_enqueue_style( 'font-awesome', get_theme_root_uri() . '/blankslate-child/font-awesome.min.css' );
+    }
+    add_action('wp_enqueue_scripts', 'font_awesome');
 
     function finkelImage($imgName){
         if($imgName != ""){

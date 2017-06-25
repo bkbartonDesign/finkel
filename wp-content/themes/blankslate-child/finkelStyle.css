@@ -1,3 +1,34 @@
+/* Global */
+
+/* color palete */
+.t-r { color:#C62A22; }
+.bg-r{ background-color: #C62A22}
+
+.t-dg { color:#515559;}
+.bg-dg{ background-color: #515559; }
+
+.t-lg { color:#b1b7be;}
+.bg-lg{ background-color:#b1b7be; }
+
+.t-w { color:white;}
+.bg-w{ background-color:white; }
+
+.serif{
+  font-family: adobe-caslon-pro;  
+}
+
+.hidden{
+    display:none;
+    
+}
+
+html{
+    font-size:100%;
+}
+body {
+    min-width: 1000px;
+    font-size:18px;
+}
 
 
 span.dt-break {
@@ -8,10 +39,6 @@ br.mb-break {
     display: none;
 }
 
-body {
-    min-width: 1000px;
-}
-
 .hdr,
 .hdr-space {
     width: 100%;
@@ -20,7 +47,10 @@ body {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
+
+
 
 a.anchor {
     display: block;
@@ -28,6 +58,8 @@ a.anchor {
     top: -133px;
     visibility: hidden;
 }
+
+
 
 .hdr {
     background-color: #C62A22;
@@ -44,13 +76,13 @@ a.anchor {
 }
 .hdr-nav {
     display: inline-block;
-    margin: 85px 0 0;
+    margin: 92px 0 0;
     float: right;
 }
 
 .hdr-nav-link {
     display: inline-block;
-    font-size: 19px;
+    font-size: 16px;
     margin-right: 40px;
     letter-spacing: 1px;
     color: #fff;
@@ -128,6 +160,14 @@ a.anchor {
     letter-spacing: 1.5px;
     line-height: 2;
     text-align: justify;
+}
+
+.section-title{
+    font-size:24px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+    padding-bottom:33px;
 }
 
 .section-about-para {
@@ -281,6 +321,8 @@ a.anchor {
 }
 
 .section-contact button {
+	display:flex;
+margin-left:auto;
     background-color: #515559;
     border: none;
     color: #fff;
@@ -330,288 +372,77 @@ a .section-blog-post-title, .section-blog-post-title {
 }
 
 
+.wpforms-field-hp{
+	display:none;
+}
 
-
-@media only screen and (max-width: 1050px) {
-    span.dt-break {
-        display: inline;
-    }
-    br.dt-break {
-        display: none;
-    }
-    span.mb-break {
-        display: none;
-    }
-    br.mb-break {
-        display: inline;
-    }
-    body {
-        min-width: 0;
-    }
-
-    .hdr,
-    .hdr-space {
-        height: 100px;
-    }
-    a.anchor {
-        top: -100px;
-    }
-
-    .hdr {
-        min-width: 0px;
-    }
-
-    .hdr-hb {
-        display: inline-block;
-        width: 40px;
-        padding: 41px 30px 0px;
-    }
-    .hdr-nav {
-        display: none;
-    }
-    .hdr-nav.active {
-        display: block;
-        position: absolute;
-        top: 100px;
-        background-color: #515559;
-        margin: 0;
-        width: 100%;
-    }
-
-    .hdr-nav-link,
-    .hdr-nav-link.active {
-        display: block;
-        font-size: 19px;
-        margin: 0;
-        letter-spacing: 1px;
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 0 10px 30px;
-        border-bottom: 1px solid #fff;
-    }
-
-    .hdr-logo {
-        padding: 20px 0 0 20px;
-        width: 200px;
-    }
-
-    .section {
-        box-sizing: border-box;
-        padding: 33px 0;
-        padding: 9vw 0;
-    }
-    .section-contents {
-        margin: 0 auto;
-        width: 91%;
-        min-width: 0px;
-    }
-
-    .section-splash {
-        padding: 0;
-        height: 566px;
-        height: 87vh;
-    }
-
-    .section-splash .section-contents {
-    }
-    .section-splash-overlay {
-    }
-
-    .section-splash-hed {
-        font-size: 33px;
-        padding-top: 170px;
-        line-height: 1.6;
-        font-size: 8.8vw;
-        padding-top: 25.5vh;
-    }
-
-    .section-splash-continue {
-        width: 50px;
-        margin: 120px auto 0;
-        width: 13.3vw;
-        margin: 18vh auto 0;
-    }
-
-    .section-about {
-        box-sizing: border-box;
-        font-size: 17px;
-        letter-spacing: 0px;
-        line-height: 1.3;
-        text-align: left;
-        font-size: 4.5vw;
-        letter-spacing: 0vw;
-    }
-
-    .section-about-para {
-        margin: 5px 0 20px;
-        margin: 1.4vw 0 5.3vw;
-    }
-
-    .section-attorneys {
-    }
-
-
-    .section-attorneys-title {
-        font-weight: 600;
-        line-height: 1.5;
-        letter-spacing: 1.3px;
-        font-size: 16px;
-        font-size: 4.3vw;
-    }
-
-    .section-attorneys-title-hed {
-        height: 50px;
-        padding: 0;
-        height: 13.2vw;
-    }
-
-    .section-attorneys-img {
-        padding: 0;
-        width: 100%;
-        float: none;
-    }
-
-    .section-attorneys-title-dek {
-        padding: 7px 0;
-        padding: 1.9vw 0;
-    }
-
-    .section-attorneys-para {
-        text-align: left;
-        margin: 5px 0 20px;
-        margin: 1.4vw 0 5.3vw;
-        font-size: 17px;
-        letter-spacing: 0px;
-        line-height: 1.3;
-        text-align: left;
-        font-size: 4.5vw;
-        letter-spacing: 0vw;
-    }
-
-    .section-clients {
-        text-align: center;
-        padding: 1px 0;
-        font-size: 0;
-    }
-
-    .section-clients-group {
-        text-align: left;
-        display: block;
-        width: 100%;
-        padding: 21px;
-        margin: 27px auto;
-        box-sizing: border-box;
-        padding: 5.6vw;
-        margin: 7.2vw auto;
-        font-size: 17px;
-        font-size: 4.5vw;
-        letter-spacing: 0px;
-        line-height: 1.3;
-    }
-
-    .practice-hed {
-        padding-bottom: 25px;
-        padding-bottom: 6.7vw;
-    }
-
-    .practice-dek {
-        padding-bottom: 14px;
-        padding-bottom: 3.7vw;
-    }
-
-    .section-contact {
-    }
-
-    .section-contact form {
-        padding: 15px 19px;
-        padding: 4vw 5vw;
-    }
-
-    .section-contact-hed {
-        font-size: 17px;
-        font-size: 4.5vw;
-        padding: 0 0 22px 5px;
-        padding: 0 0 22px 1.3vw;
-    }
-
-    .section-contact div {}
-
-    .section-contact label {
-    }
-    .ie8 .section-contact label {
-    }
-
-    .section-contact input,
-    .section-contact textarea {
-        padding: 6px 7px 18px;
-        margin-bottom: 15px;
-        font-size: 17px;
-        font-size: 4.5vw;
-        padding: 1.6vw 1.8vw 4.8vw;
-        margin-bottom: 4vw;
-    }
-    .section-contact textarea {
-        min-height: 240px;
-        min-height: 63.9vw;
-    }
-
-    .section-contact .button {
-    }
-
-    .section-contact button {
-        font-size: 17px;
-        font-size: 4.5vw;
-        padding: 6px 66px 18px 6px;
-        padding: 1.6vw 17.6vw 4.7vw 1.6vw;
-    }
-
-    .form-messages {
-        font-size: 19px;
-        color: #005578;
-        position: absolute;
-        bottom: 4vw;
-        left: 30px;
-        width: 71vw;
-        font-size: 3.7vw;
-        width: 50%;
-    }
-
-    .section-blog {}
-
-    .section-blog-post {
-        padding: 10px 0 20px;
-    }
-
-    .section-blog-post-date {
-        font-size: 17px;
-        font-size: 4.5vw;
-        line-height: 2;
-    }
-
-    .section-blog-post-title {
-        font-size: 35px;
-        font-size: 9.34vw;
-        line-height: 1.2;
-        padding-bottom: 10px;
-    }
-
-    .section-blog-post-para {
-        text-align: left;
-        margin: 5px 0 20px;
-        margin: 1.4vw 0 5.3vw;
-        font-size: 17px;
-        font-size: 4.5vw;
-        letter-spacing: 0px;
-        line-height: 1.3;
-        text-align: left;
-    }
-    .ftr {
-        background-color: #515559;
-        padding: 20px 0 20px 20px;
-        min-width: 0;
-    }
-    
-    
+input:focus, textarea:focus {
+    outline: none !important;
+    border:1px solid black;
+    box-shadow: 0 0 10px #719ECE;
 }
 
 
+/* list style */
+
+.list-title{
+    font-size:24px;
+    font-weight:900;
+}
+
+.list{
+    line-height: 36px; 
+    margin-top: 12px; 
+    font-size:18px;
+}
+
+.list > p {
+    margin:0;
+}
+
+/* section-practice */
+
+.pa-list > ul > li, .pa-list > ul > li > ul, .pa-list > ul > li > ul >li, .pa-list > ul > li > ul > li > ul > li {
+    list-style-type: none;
+}
+.pa { 
+    padding:0;
+    margin-bottom:2px;
+    border-radius:2px;
+    padding-bottom:18px;
+}
+
+.pa-list-control{
+    padding:18px 24px 0px;
+}
+.pa-title{ 
+    display:flex;
+    font-size:24px;
+}
+
+.pa-title-text{ 
+    padding-right:33px;
+    padding-top:18px;
+    /*margin-left:20px; */
+    /*line-height:24px;*/
+    /*padding-bottom:18px;*/
+    
+}
+
+.pa-hed-type{
+    font-weight:900;
+}
+
+.pa-tag{
+    line-height:24px;    
+}
+.pa-list{ 
+    padding:0px 72px; 
+    line-height: 36px; 
+    margin-top: 12px; 
+    font-size:18px;
+}
+
+.pa-list p, .pa-list ul{
+    margin:0px;
+}

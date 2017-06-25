@@ -54,4 +54,16 @@ $(function() {
       }
     });
   }
+  
+  function toggle(i,cssCls){ 
+      $(i).toggleClass(cssCls);
+  }
+  
+  $('.pa').on('click',function(){
+    var icons = $(this).find(".pa-list-control").find('.icon');
+    $(icons).each( function(i,ele){ $(ele).toggleClass('hidden') } );
+    $(this).children('.pa-list').toggleClass('hidden');
+    
+  });
+  
 });

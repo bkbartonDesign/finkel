@@ -83,8 +83,6 @@
     }
     .section-splash-overlay {
     }
-
-
     .section-splash-hed {
     line-height: 1.6;
     font-size: 33px;
@@ -101,8 +99,6 @@
     margin: 120px auto 0;
     margin: 18vh auto 0;
 }
-
-
 
 
     .section-about {
@@ -161,13 +157,13 @@
         letter-spacing: 0vw;
     }
 
-    .section-practice {
+    .section-clients {
         text-align: center;
         padding: 1px 0;
         font-size: 0;
     }
 
-    .section-practice-group {
+    .section-clients-group {
         text-align: left;
         display: block;
         width: 100%;
@@ -283,4 +279,12 @@
         padding: 20px 0 20px 20px;
         min-width: 0;
     }
+    
+	.section-blog-post  > img
+	{	
+		max-width:100%;
+		height:auto;
+	}
 }
+
+
